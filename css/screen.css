@@ -1,0 +1,192 @@
+/* line 17, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+/* line 103, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 6, ../scss/screen.scss */
+body {
+  font: 18px/1.5 "Roboto", "Franklin Gothic Book", "Arial", sans-serif; }
+
+/* line 10, ../scss/screen.scss */
+header {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  height: 3.5em;
+  padding: 1em 0; }
+/* line 15, ../scss/screen.scss */
+header .logo {
+  position: relative;
+  left: 1em;
+  float: left; }
+/* line 19, ../scss/screen.scss */
+header .logo .slogan {
+  position: absolute;
+  top: 2.5em;
+  color: #3c6caa;
+  font-size: 16px; }
+/* line 26, ../scss/screen.scss */
+header nav {
+  float: left;
+  padding-left: 5em;
+  margin-top: 1.25em; }
+/* line 30, ../scss/screen.scss */
+header nav li {
+  float: left;
+  width: 7.5em;
+  font-size: 14px;
+  text-align: center;
+  padding: 0.5em 1em 0 1em;
+  text-transform: uppercase;
+  color: #444444; }
+/* line 38, ../scss/screen.scss */
+header nav li a {
+  color: #444444;
+  text-decoration: none; }
+/* line 41, ../scss/screen.scss */
+header nav li a:hover {
+  color: #3c6caa; }
+
+/* LOGO MENU */
+/* line 51, ../scss/screen.scss */
+#vendre:before {
+  content: url(../img/icons/home.png);
+  position: relative;
+  top: -1.25em;
+  left: 2.5em; }
+/* line 56, ../scss/screen.scss */
+#vendre:before:hover {
+  content: url(../img/icons/homeHover.png); }
+
+/* line 61, ../scss/screen.scss */
+#louer:before {
+  content: url(../img/icons/home.png);
+  position: relative;
+  top: -1.25em;
+  left: 2.25em; }
+/* line 66, ../scss/screen.scss */
+#louer:before:hover {
+  content: url(../img/icons/homeHover.png); }
+
+/* line 71, ../scss/screen.scss */
+#vacances:before {
+  content: url(../img/icons/airplane.png);
+  position: relative;
+  top: -1.25em;
+  left: 3em; }
+/* line 76, ../scss/screen.scss */
+#vacances:before:hover {
+  content: url(../img/icons/airplaneHover.png); }
+
+/* line 80, ../scss/screen.scss */
+#decoration:before {
+  content: url(../img/icons/paint.png);
+  position: relative;
+  top: -1.25em;
+  left: 3.5em; }
+/* line 85, ../scss/screen.scss */
+#decoration:before:hover {
+  content: url(../img/icons/paintHover.png); }
+
+/* line 89, ../scss/screen.scss */
+#batir:before {
+  content: url(../img/icons/hammer.png);
+  position: relative;
+  top: -1.25em;
+  left: 1.75em; }
+/* line 94, ../scss/screen.scss */
+#batir:before:hover {
+  content: url(../img/icons/hammerHover.png); }
+
+/* line 98, ../scss/screen.scss */
+#renover:before {
+  content: url(../img/icons/loop.png);
+  position: relative;
+  top: -1.25em;
+  left: 2.75em; }
+/* line 103, ../scss/screen.scss */
+#renover:before:hover {
+  content: url(../img/icons/loopHover.png); }
+
+/* SWIPE */
+/* line 110, ../scss/screen.scss */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative; }
+
+/* line 115, ../scss/screen.scss */
+.swipe-wrap {
+  overflow: hidden;
+  position: relative; }
+
+/* line 119, ../scss/screen.scss */
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative; }
+
+/* line 124, ../scss/screen.scss */
+#mySwipe {
+  width: 1200px;
+  margin: 0 auto; }
+
+/* line 128, ../scss/screen.scss */
+.slider {
+  background-color: #3c6caa;
+  height: 500px;
+  position: relative; }
+/* line 132, ../scss/screen.scss */
+.slider .controllers {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+/* line 139, ../scss/screen.scss */
+header:after {
+  content: '';
+  clear: both;
+  display: block; }

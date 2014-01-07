@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Immoweb: 1er site immobilier en Belgique</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/screen.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo représentatif d'Immoweb ">
+                <span class="slogan">Le 1er site immobilier belge</span>
+            </div>
+            <nav>
+                <ul class="onglets">
+                    <li><a id="vendre" href="#">Vendre</a></li>
+                    <li><a id="louer" href="#">Louer</a></li>
+                    <li><a id="vacances" href="#">Vacances</a></li>
+                    <li><a id="decoration" href="#">Décoration</a></li>
+                    <li><a id="batir" href="#">Bâtir</a></li>
+                    <li><a id="renover" href="#">Rénover</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slider">
+            <div id='mySwipe' class='swipe'>
+              <div class='swipe-wrap'>
+                <div><img src="img/maison1slide.png" alt="Bien a vendre - Maisons"></div>
+                <div><img src="img/maison2slide.png" alt="Bien a vendre - Maisons"></div>
+                <div><img src="img/maison3slide.png" alt="Bien a vendre - Maisons"></div>
+              </div>
+            </div>
+            <div class="controllers">
+              <button id="left" onclick='mySwipe.prev()'>prev</button> 
+              <button id="right" onclick='mySwipe.next()'>next</button>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src='js/swipe.js'></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <script>
+
+        // pure JS
+        var elem = document.getElementById('mySwipe');
+        window.mySwipe = Swipe(elem, {
+          //startSlide: 4,
+          auto: 3000,
+          continuous: true,
+          disableScroll: true,
+          // stopPropagation: true,
+          //callback: function(index, element) {},
+          transitionEnd: function(index, element) {}
+        });
+
+        // with jQuery
+        //window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+        </script>
+    </body>
+</html>

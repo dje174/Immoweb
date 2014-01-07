@@ -1,0 +1,141 @@
+@import "compass";
+@import "compass/reset";
+@import "colors";
+@import "mixins";
+
+body{
+	font: 18px/1.5 "Roboto", "Franklin Gothic Book", "Arial", sans-serif;	
+}
+
+header{
+	width: 100%;
+	@include single-box-shadow;
+	height: 3.5em;
+	padding: 1em 0;
+	.logo{
+		position: relative;
+		left: 1em;
+		float: left;
+		.slogan{
+			position: absolute;
+			top: 2.5em;
+			color: $clearBlue;
+			font-size: 16px;
+		}
+	}
+	nav{
+		float: left;
+		padding-left: 5em;
+		margin-top: 1.25em;
+		li{
+			float: left;
+			width: 7.5em;
+			font-size: 14px;
+			text-align: center;
+			padding: 0.5em 1em 0 1em;
+			text-transform: uppercase;
+			color: $darkGray;
+			a{
+				color: $darkGray;
+				text-decoration: none;
+				&:hover{
+					color: $clearBlue;
+				}
+			}
+		}
+	}
+}
+
+/* LOGO MENU */
+
+#vendre:before{
+	content: url(../img/icons/home.png);
+	position: relative;
+	top: -1.25em;
+	left: 2.5em;
+	&:hover{
+		content: url(../img/icons/homeHover.png);
+	}
+}
+
+#louer:before{
+	content: url(../img/icons/home.png);
+	position: relative;
+	top: -1.25em;
+	left: 2.25em;
+	&:hover{
+		content: url(../img/icons/homeHover.png);
+	}
+}
+
+#vacances:before{
+	content: url(../img/icons/airplane.png);
+	position: relative;
+	top: -1.25em;
+	left: 3em;
+	&:hover{
+		content: url(../img/icons/airplaneHover.png);
+	}
+}
+#decoration:before{
+	content: url(../img/icons/paint.png);
+	position: relative;
+	top: -1.25em;
+	left: 3.5em;
+	&:hover{
+		content: url(../img/icons/paintHover.png);
+	}
+}
+#batir:before{
+	content: url(../img/icons/hammer.png);
+	position: relative;
+	top: -1.25em;
+	left: 1.75em;
+	&:hover{
+		content: url(../img/icons/hammerHover.png);
+	}
+}
+#renover:before{
+	content: url(../img/icons/loop.png);
+	position: relative;
+	top: -1.25em;
+	left: 2.75em;
+	&:hover{
+		content: url(../img/icons/loopHover.png);
+	}
+}
+
+/* SWIPE */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+#mySwipe{
+	width: 1200px;
+	margin: 0 auto;
+}
+.slider{
+	background-color: $clearBlue;
+	height: 500px;
+	position: relative;
+	.controllers{
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+}
+
+header:after{
+	@include reinitFloat();
+}
