@@ -42,18 +42,18 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 6, ../scss/screen.scss */
+/* line 7, ../scss/screen.scss */
 body {
   font: 18px/1.5 "Roboto", "Franklin Gothic Book", "Arial", sans-serif; }
-/* line 8, ../scss/screen.scss */
+/* line 9, ../scss/screen.scss */
 body a {
   color: #3c6caa;
   text-decoration: none; }
-/* line 11, ../scss/screen.scss */
+/* line 12, ../scss/screen.scss */
 body a:hover {
   text-decoration: underline;
   color: #224169; }
-/* line 16, ../scss/screen.scss */
+/* line 17, ../scss/screen.scss */
 body .submit {
   color: white;
   background-color: #3c6caa;
@@ -65,34 +65,38 @@ body .submit {
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em; }
-/* line 23, ../scss/screen.scss */
+/* line 24, ../scss/screen.scss */
 body .submit:hover {
   background-color: #224169;
   cursor: pointer; }
+/* line 29, ../scss/screen.scss */
+body h2 {
+  font-size: 22px;
+  color: #30393e; }
 
-/* line 30, ../scss/screen.scss */
+/* line 35, ../scss/screen.scss */
 header {
   width: 100%;
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid #30393e;
   height: 3.5em;
   padding: 1em 0; }
-/* line 35, ../scss/screen.scss */
+/* line 40, ../scss/screen.scss */
 header .logo {
   position: relative;
   left: 1em;
   float: left; }
-/* line 39, ../scss/screen.scss */
+/* line 44, ../scss/screen.scss */
 header .logo .slogan {
   position: absolute;
   top: 2.5em;
   color: #3c6caa;
   font-size: 16px; }
-/* line 46, ../scss/screen.scss */
+/* line 51, ../scss/screen.scss */
 header nav {
   float: left;
-  padding-left: 5em;
+  padding-left: 1em;
   margin-top: 1.25em; }
-/* line 50, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 header nav li {
   float: left;
   width: 7.5em;
@@ -100,106 +104,146 @@ header nav li {
   text-align: center;
   padding: 0.5em 1em 0 1em;
   text-transform: uppercase;
-  color: #444444; }
-/* line 58, ../scss/screen.scss */
+  color: #30393e; }
+/* line 63, ../scss/screen.scss */
 header nav li a {
-  color: #444444;
+  color: #30393e;
   text-decoration: none; }
-/* line 61, ../scss/screen.scss */
+/* line 66, ../scss/screen.scss */
 header nav li a:hover {
   color: #3c6caa; }
 
-/* LOGO MENU */
-/* line 71, ../scss/screen.scss */
+/* LOGO MENU + Logos */
+/* line 76, ../scss/screen.scss */
+.logoHome:before {
+  content: url(../img/icons/homeHover.png);
+  padding-right: 0.5em; }
+
+/* line 81, ../scss/screen.scss */
+.logoAll:before {
+  content: url(../img/icons/all.png);
+  padding-right: 0.5em; }
+
+/* line 86, ../scss/screen.scss */
 #vendre:before {
   content: url(../img/icons/home.png);
   position: relative;
   top: -1.25em;
   left: 2.5em; }
-/* line 76, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 #vendre:before:hover {
   content: url(../img/icons/homeHover.png); }
 
-/* line 81, ../scss/screen.scss */
+/* line 96, ../scss/screen.scss */
 #louer:before {
   content: url(../img/icons/home.png);
   position: relative;
   top: -1.25em;
   left: 2.25em; }
-/* line 86, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 #louer:before:hover {
   content: url(../img/icons/homeHover.png); }
 
-/* line 91, ../scss/screen.scss */
+/* line 106, ../scss/screen.scss */
 #vacances:before {
   content: url(../img/icons/airplane.png);
   position: relative;
   top: -1.25em;
   left: 3em; }
-/* line 96, ../scss/screen.scss */
+/* line 111, ../scss/screen.scss */
 #vacances:before:hover {
   content: url(../img/icons/airplaneHover.png); }
 
-/* line 100, ../scss/screen.scss */
+/* line 115, ../scss/screen.scss */
 #decoration:before {
   content: url(../img/icons/paint.png);
   position: relative;
   top: -1.25em;
   left: 3.5em; }
-/* line 105, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 #decoration:before:hover {
   content: url(../img/icons/paintHover.png); }
 
-/* line 109, ../scss/screen.scss */
+/* line 124, ../scss/screen.scss */
 #batir:before {
   content: url(../img/icons/hammer.png);
   position: relative;
   top: -1.25em;
   left: 1.75em; }
-/* line 114, ../scss/screen.scss */
+/* line 129, ../scss/screen.scss */
 #batir:before:hover {
   content: url(../img/icons/hammerHover.png); }
 
-/* line 118, ../scss/screen.scss */
+/* line 133, ../scss/screen.scss */
 #renover:before {
   content: url(../img/icons/loop.png);
   position: relative;
   top: -1.25em;
   left: 2.75em; }
-/* line 123, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 #renover:before:hover {
   content: url(../img/icons/loopHover.png); }
 
+/* line 142, ../scss/screen.scss */
+#user:before {
+  content: url(../img/icons/user.png);
+  position: relative;
+  top: -1.25em;
+  left: 2.75em; }
+/* line 147, ../scss/screen.scss */
+#user:before:hover {
+  content: url(../img/icons/loopHover.png); }
+
+/* line 151, ../scss/screen.scss */
+#where:before {
+  content: url(../img/icons/where.png);
+  margin-right: 0.5em; }
+
+/* line 155, ../scss/screen.scss */
+#guides:before {
+  content: url(../img/icons/guides.png);
+  margin-right: 0.5em; }
+
+/* line 159, ../scss/screen.scss */
+#partners:before {
+  content: url(../img/icons/partners.png);
+  margin-right: 0.5em; }
+
+/* line 163, ../scss/screen.scss */
+#news:before {
+  content: url(../img/icons/news.png);
+  margin-right: 0.5em; }
+
 /* SWIPE */
-/* line 130, ../scss/screen.scss */
+/* line 171, ../scss/screen.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative; }
 
-/* line 135, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 .swipe-wrap {
   overflow: hidden;
   position: relative; }
 
-/* line 139, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .swipe-wrap > div {
   float: left;
   width: 100%;
   position: relative; }
 
-/* line 144, ../scss/screen.scss */
+/* line 185, ../scss/screen.scss */
 #mySwipe {
   max-width: 1200px;
   margin: 0 auto; }
 
-/* line 148, ../scss/screen.scss */
+/* line 189, ../scss/screen.scss */
 .slider {
   background-color: #3c6caa;
   height: 500px;
   position: relative;
   max-width: 1280px; }
-/* line 153, ../scss/screen.scss */
+/* line 194, ../scss/screen.scss */
 .slider .controllers {
   margin: auto;
   position: absolute;
@@ -207,7 +251,7 @@ header nav li a:hover {
   left: 0;
   bottom: 0;
   right: 0; }
-/* line 157, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 .slider .controllers #left {
   float: left;
   margin-top: 14em;
@@ -219,7 +263,7 @@ header nav li a:hover {
 /* line 13, ../scss/_mixins.scss */
 .slider .controllers #left:hover {
   background-color: #d7d7d7; }
-/* line 161, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 .slider .controllers #right {
   float: right;
   margin-top: 14em;
@@ -233,7 +277,7 @@ header nav li a:hover {
   background-color: #d7d7d7; }
 
 /* Formulaire recherche rapide */
-/* line 170, ../scss/screen.scss */
+/* line 211, ../scss/screen.scss */
 .fastSearch {
   width: 20em;
   position: absolute;
@@ -242,17 +286,17 @@ header nav li a:hover {
   padding: 1.5em 0 0 1.5em;
   background-color: rgba(255, 255, 255, 0.7);
   height: 26.3em; }
-/* line 178, ../scss/screen.scss */
+/* line 219, ../scss/screen.scss */
 .fastSearch .block, .fastSearch .submit {
   display: block;
   margin-top: 1em; }
-/* line 182, ../scss/screen.scss */
+/* line 223, ../scss/screen.scss */
 .fastSearch h2 {
   font-size: 20px;
-  color: #444444;
+  color: #30393e;
   font-weight: bold;
   margin-bottom: 0.5em; }
-/* line 188, ../scss/screen.scss */
+/* line 229, ../scss/screen.scss */
 .fastSearch .inputText {
   padding: 0.5em 0.75em;
   -webkit-border-radius: 0.5em;
@@ -261,15 +305,125 @@ header nav li a:hover {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
   border: 1px solid #8f8f8f; }
-/* line 193, ../scss/screen.scss */
+/* line 232, ../scss/screen.scss */
 .fastSearch #location {
   width: 25em; }
-/* line 196, ../scss/screen.scss */
+/* line 235, ../scss/screen.scss */
 .fastSearch select {
   padding: 2em; }
 
-/* line 201, ../scss/screen.scss */
-header:after {
+/* Section principale */
+/* line 242, ../scss/screen.scss */
+.main {
+  margin: 0em 2.2em 1.5em 2.2em; }
+/* line 244, ../scss/screen.scss */
+.main .rubrique, .main .about {
+  margin-top: 2.5em; }
+/* line 246, ../scss/screen.scss */
+.main .rubrique article, .main .about article {
+  float: left;
+  border: 1px solid #d7d7d7;
+  margin: 1em 1em 0 0; }
+/* line 250, ../scss/screen.scss */
+.main .rubrique article img, .main .about article img {
+  float: left;
+  margin: 1.25em 1em 1.25em 1em;
+  border: 1px solid #30393e; }
+/* line 255, ../scss/screen.scss */
+.main .rubrique article .details, .main .about article .details {
+  float: left;
+  margin-top: 0.5em;
+  width: 8em;
+  padding-right: 0.5em; }
+/* line 260, ../scss/screen.scss */
+.main .rubrique article .details h3, .main .about article .details h3 {
+  color: #d13f3e;
+  font-weight: bold; }
+/* line 264, ../scss/screen.scss */
+.main .rubrique article .details .ville, .main .about article .details .ville {
+  color: #b4c135; }
+/* line 267, ../scss/screen.scss */
+.main .rubrique article .details .superficie, .main .about article .details .superficie {
+  color: #30393e; }
+/* line 270, ../scss/screen.scss */
+.main .rubrique article .details .descriptif, .main .about article .details .descriptif {
+  font-size: 16px;
+  color: #30393e; }
+
+/* line 280, ../scss/screen.scss */
+.about div {
+  margin: 1.5em 1.5em;
+  float: left;
+  width: 42.5%;
+  padding-right: 1.5em; }
+/* line 285, ../scss/screen.scss */
+.about div h3 {
+  font-size: 20px;
+  color: #30393e;
+  margin-bottom: 0.5em; }
+/* line 290, ../scss/screen.scss */
+.about div .socials {
+  padding: 0.5em 1.5em 0 0; }
+/* line 293, ../scss/screen.scss */
+.about div .partnersImg {
+  padding: 1em 0.5em 0 0; }
+
+/* line 299, ../scss/screen.scss */
+footer {
+  width: 100%;
+  background-color: #30393e; }
+/* line 302, ../scss/screen.scss */
+footer .sectionFooter {
+  float: left;
+  width: 20%;
+  padding: 1em 1.5em; }
+/* line 306, ../scss/screen.scss */
+footer .sectionFooter h4 {
+  color: #d13f3e;
+  font-size: 19px; }
+/* line 310, ../scss/screen.scss */
+footer .sectionFooter a {
+  color: white;
+  font-size: 16px;
+  display: block;
+  font-family: "Lato"; }
+/* line 315, ../scss/screen.scss */
+footer .sectionFooter a:hover {
+  color: #8f8f8f; }
+/* line 320, ../scss/screen.scss */
+footer .sectionFooter #connect .inputText {
+  padding: 0.5em 0.75em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #8f8f8f;
+  display: block;
+  width: 20em; }
+/* line 325, ../scss/screen.scss */
+footer .sectionFooter #connect label {
+  color: #8f8f8f; }
+/* line 328, ../scss/screen.scss */
+footer .sectionFooter #connect .submitSmall {
+  color: white;
+  background-color: #3c6caa;
+  padding: 0.75em 1.5em;
+  margin: 0.5em 0em;
+  font-size: 15px;
+  border: none;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em; }
+/* line 336, ../scss/screen.scss */
+footer .sectionFooter #connect .submitSmall:hover {
+  background-color: #224169;
+  cursor: pointer; }
+
+/* line 345, ../scss/screen.scss */
+header:after, .rubrique:after, .about:after, .rubrique article:after, .about article:after, .sectionFooter:after, footer:after {
   content: '';
   clear: both;
   display: block; }

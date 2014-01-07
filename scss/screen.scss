@@ -3,6 +3,7 @@
 @import "colors";
 @import "mixins";
 
+
 body{
 	font: 18px/1.5 "Roboto", "Franklin Gothic Book", "Arial", sans-serif;	
 	a{
@@ -25,6 +26,10 @@ body{
 			cursor: pointer;
 		}
 	}
+	h2{
+		font-size: 22px;
+		color: $darkGray;
+	}
 }
 
 header{
@@ -45,7 +50,7 @@ header{
 	}
 	nav{
 		float: left;
-		padding-left: 5em;
+		padding-left: 1em;
 		margin-top: 1.25em;
 		li{
 			float: left;
@@ -66,7 +71,17 @@ header{
 	}
 }
 
-/* LOGO MENU */
+/* LOGO MENU + Logos */
+
+.logoHome:before{
+	content: url(../img/icons/homeHover.png);
+	padding-right: 0.5em;
+}
+
+.logoAll:before{
+	content: url(../img/icons/all.png);
+	padding-right: 0.5em;
+}
 
 #vendre:before{
 	content: url(../img/icons/home.png);
@@ -124,6 +139,32 @@ header{
 		content: url(../img/icons/loopHover.png);
 	}
 }
+#user:before{
+	content: url(../img/icons/user.png);
+	position: relative;
+	top: -1.25em;
+	left: 2.75em;
+	&:hover{
+		content: url(../img/icons/loopHover.png);
+	}
+}
+#where:before{
+	content: url(../img/icons/where.png);
+	margin-right: 0.5em;
+}
+#guides:before{
+	content: url(../img/icons/guides.png);
+	margin-right: 0.5em;
+}
+#partners:before{
+	content: url(../img/icons/partners.png);
+	margin-right: 0.5em;
+}
+#news:before{
+	content: url(../img/icons/news.png);
+	margin-right: 0.5em;
+}
+
 
 /* SWIPE */
 
@@ -186,9 +227,7 @@ header{
 		margin-bottom: 0.5em;
 	}
 	.inputText{
-		padding: 0.5em 0.75em;
-		@include border-radius(0.5em);
-		border: 1px solid $middleGray;
+		@include inputsStyle();
 	}
 	#location{
 		width: 25em;
@@ -198,6 +237,111 @@ header{
 	}
 }
 
-header:after{
+/* Section principale */
+
+.main{
+	margin: 0em 2.2em 1.5em 2.2em;
+	.rubrique{
+		margin-top: 2.5em;
+		article{
+			float: left;
+			border: 1px solid $whiteGray;
+			margin: 1em 1em 0 0;
+			img{
+				float: left;
+				margin: 1.25em 1em 1.25em 1em;
+				border: 1px solid $darkGray;
+			}
+			.details{
+				float: left;
+				margin-top: 0.5em;
+				width: 8em;
+				padding-right: 0.5em;
+				h3{
+					color: $clearRed;
+					font-weight: bold;
+				}
+				.ville{
+					color: $clearGreen;
+				}
+				.superficie{
+					color: $darkGray;
+				}
+				.descriptif{
+					font-size: 16px;
+					color: $darkGray;
+				}
+			}
+		}
+	}
+}
+.about{
+	@extend .rubrique;
+	div{
+		margin: 1.5em 1.5em;
+		float: left;
+		width: 42.5%;
+		padding-right: 1.5em;
+		h3{
+			font-size: 20px;
+			color: $darkGray;
+			margin-bottom: 0.5em;
+		}
+		.socials{
+			padding: 0.5em 1.5em 0 0;
+		}
+		.partnersImg{
+			padding: 1em 0.5em 0 0;
+		}
+	}
+}
+
+footer{
+	width: 100%;
+	background-color: $darkGray;
+	.sectionFooter{
+		float: left;
+		width: 20%;
+		padding: 1em 1.5em;
+		h4{
+			color: $clearRed;
+			font-size: 19px;
+		}
+		a{
+			color:white;
+			font-size: 16px;
+			display: block;
+			font-family: "Lato";
+			&:hover{
+				color: $middleGray;
+			}
+		}
+		#connect{
+			.inputText{
+				@include inputsStyle();
+				display: block;
+				width: 20em;
+			}
+			label{
+				color: $middleGray;
+			}
+			.submitSmall{
+				color: white;
+				background-color: $clearBlue;
+				padding: 0.75em 1.5em;
+				margin: 0.5em 0em;
+				font-size: 15px;
+				border: none;
+				@include border-radius(0.5em);
+				&:hover{
+					background-color: $darkBlue;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+header:after, .rubrique:after, .rubrique article:after, .sectionFooter:after, footer:after{
 	@include reinitFloat();
 }
