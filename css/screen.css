@@ -45,32 +45,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 6, ../scss/screen.scss */
 body {
   font: 18px/1.5 "Roboto", "Franklin Gothic Book", "Arial", sans-serif; }
+/* line 8, ../scss/screen.scss */
+body a {
+  color: #3c6caa;
+  text-decoration: none; }
+/* line 11, ../scss/screen.scss */
+body a:hover {
+  text-decoration: underline;
+  color: #224169; }
+/* line 16, ../scss/screen.scss */
+body .submit {
+  color: white;
+  background-color: #3c6caa;
+  padding: 0.75em 1em;
+  font-size: 17px;
+  border: none;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em; }
+/* line 23, ../scss/screen.scss */
+body .submit:hover {
+  background-color: #224169;
+  cursor: pointer; }
 
-/* line 10, ../scss/screen.scss */
+/* line 30, ../scss/screen.scss */
 header {
   width: 100%;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  border-bottom: 1px solid #444444;
   height: 3.5em;
   padding: 1em 0; }
-/* line 15, ../scss/screen.scss */
+/* line 35, ../scss/screen.scss */
 header .logo {
   position: relative;
   left: 1em;
   float: left; }
-/* line 19, ../scss/screen.scss */
+/* line 39, ../scss/screen.scss */
 header .logo .slogan {
   position: absolute;
   top: 2.5em;
   color: #3c6caa;
   font-size: 16px; }
-/* line 26, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 header nav {
   float: left;
   padding-left: 5em;
   margin-top: 1.25em; }
-/* line 30, ../scss/screen.scss */
+/* line 50, ../scss/screen.scss */
 header nav li {
   float: left;
   width: 7.5em;
@@ -79,104 +101,105 @@ header nav li {
   padding: 0.5em 1em 0 1em;
   text-transform: uppercase;
   color: #444444; }
-/* line 38, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 header nav li a {
   color: #444444;
   text-decoration: none; }
-/* line 41, ../scss/screen.scss */
+/* line 61, ../scss/screen.scss */
 header nav li a:hover {
   color: #3c6caa; }
 
 /* LOGO MENU */
-/* line 51, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 #vendre:before {
   content: url(../img/icons/home.png);
   position: relative;
   top: -1.25em;
   left: 2.5em; }
-/* line 56, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 #vendre:before:hover {
   content: url(../img/icons/homeHover.png); }
 
-/* line 61, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 #louer:before {
   content: url(../img/icons/home.png);
   position: relative;
   top: -1.25em;
   left: 2.25em; }
-/* line 66, ../scss/screen.scss */
+/* line 86, ../scss/screen.scss */
 #louer:before:hover {
   content: url(../img/icons/homeHover.png); }
 
-/* line 71, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 #vacances:before {
   content: url(../img/icons/airplane.png);
   position: relative;
   top: -1.25em;
   left: 3em; }
-/* line 76, ../scss/screen.scss */
+/* line 96, ../scss/screen.scss */
 #vacances:before:hover {
   content: url(../img/icons/airplaneHover.png); }
 
-/* line 80, ../scss/screen.scss */
+/* line 100, ../scss/screen.scss */
 #decoration:before {
   content: url(../img/icons/paint.png);
   position: relative;
   top: -1.25em;
   left: 3.5em; }
-/* line 85, ../scss/screen.scss */
+/* line 105, ../scss/screen.scss */
 #decoration:before:hover {
   content: url(../img/icons/paintHover.png); }
 
-/* line 89, ../scss/screen.scss */
+/* line 109, ../scss/screen.scss */
 #batir:before {
   content: url(../img/icons/hammer.png);
   position: relative;
   top: -1.25em;
   left: 1.75em; }
-/* line 94, ../scss/screen.scss */
+/* line 114, ../scss/screen.scss */
 #batir:before:hover {
   content: url(../img/icons/hammerHover.png); }
 
-/* line 98, ../scss/screen.scss */
+/* line 118, ../scss/screen.scss */
 #renover:before {
   content: url(../img/icons/loop.png);
   position: relative;
   top: -1.25em;
   left: 2.75em; }
-/* line 103, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 #renover:before:hover {
   content: url(../img/icons/loopHover.png); }
 
 /* SWIPE */
-/* line 110, ../scss/screen.scss */
+/* line 130, ../scss/screen.scss */
 .swipe {
   overflow: hidden;
   visibility: hidden;
   position: relative; }
 
-/* line 115, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 .swipe-wrap {
   overflow: hidden;
   position: relative; }
 
-/* line 119, ../scss/screen.scss */
+/* line 139, ../scss/screen.scss */
 .swipe-wrap > div {
   float: left;
   width: 100%;
   position: relative; }
 
-/* line 124, ../scss/screen.scss */
+/* line 144, ../scss/screen.scss */
 #mySwipe {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto; }
 
-/* line 128, ../scss/screen.scss */
+/* line 148, ../scss/screen.scss */
 .slider {
   background-color: #3c6caa;
   height: 500px;
-  position: relative; }
-/* line 132, ../scss/screen.scss */
+  position: relative;
+  max-width: 1280px; }
+/* line 153, ../scss/screen.scss */
 .slider .controllers {
   margin: auto;
   position: absolute;
@@ -184,8 +207,68 @@ header nav li a:hover {
   left: 0;
   bottom: 0;
   right: 0; }
+/* line 157, ../scss/screen.scss */
+.slider .controllers #left {
+  float: left;
+  margin-top: 14em;
+  padding: 8em 0;
+  width: 3.6em;
+  cursor: pointer;
+  background-color: white;
+  border: none; }
+/* line 13, ../scss/_mixins.scss */
+.slider .controllers #left:hover {
+  background-color: #d7d7d7; }
+/* line 161, ../scss/screen.scss */
+.slider .controllers #right {
+  float: right;
+  margin-top: 14em;
+  padding: 8em 0;
+  width: 3.6em;
+  cursor: pointer;
+  background-color: white;
+  border: none; }
+/* line 13, ../scss/_mixins.scss */
+.slider .controllers #right:hover {
+  background-color: #d7d7d7; }
 
-/* line 139, ../scss/screen.scss */
+/* Formulaire recherche rapide */
+/* line 170, ../scss/screen.scss */
+.fastSearch {
+  width: 20em;
+  position: absolute;
+  top: 0.00001em;
+  left: 2.2em;
+  padding: 1.5em 0 0 1.5em;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 26.3em; }
+/* line 178, ../scss/screen.scss */
+.fastSearch .block, .fastSearch .submit {
+  display: block;
+  margin-top: 1em; }
+/* line 182, ../scss/screen.scss */
+.fastSearch h2 {
+  font-size: 20px;
+  color: #444444;
+  font-weight: bold;
+  margin-bottom: 0.5em; }
+/* line 188, ../scss/screen.scss */
+.fastSearch .inputText {
+  padding: 0.5em 0.75em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #8f8f8f; }
+/* line 193, ../scss/screen.scss */
+.fastSearch #location {
+  width: 25em; }
+/* line 196, ../scss/screen.scss */
+.fastSearch select {
+  padding: 2em; }
+
+/* line 201, ../scss/screen.scss */
 header:after {
   content: '';
   clear: both;

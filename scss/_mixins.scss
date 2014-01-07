@@ -3,3 +3,14 @@
     clear: both;
     display: block;
 }
+@mixin arrowSlider {
+	margin-top: 14em;
+	padding: 8em 0;
+	width: 3.6em;
+	cursor: pointer;
+	background-color: white;
+	border: none;
+	&:hover{
+		background-color: $whiteGray;
+	}
+}

@@ -5,11 +5,31 @@
 
 body{
 	font: 18px/1.5 "Roboto", "Franklin Gothic Book", "Arial", sans-serif;	
+	a{
+		color: $clearBlue;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+			color: $darkBlue;
+		}
+	}
+	.submit{
+		color: white;
+		background-color: $clearBlue;
+		padding: 0.75em 1em;
+		font-size: 17px;
+		border: none;
+		@include border-radius(0.5em);
+		&:hover{
+			background-color: $darkBlue;
+			cursor: pointer;
+		}
+	}
 }
 
 header{
 	width: 100%;
-	@include single-box-shadow;
+	border-bottom: 1px solid $darkGray;
 	height: 3.5em;
 	padding: 1em 0;
 	.logo{
@@ -122,17 +142,59 @@ header{
   position: relative;
 }
 #mySwipe{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 .slider{
 	background-color: $clearBlue;
 	height: 500px;
 	position: relative;
+	max-width: 1280px;
 	.controllers{
 		margin: auto;
 		position: absolute;
 		top: 0; left: 0; bottom: 0; right: 0;
+		#left{ 
+			float:left;
+			@include arrowSlider();
+		}
+		#right{ 
+			float:right;
+			@include arrowSlider();
+		}
+	}
+}
+
+/* Formulaire recherche rapide */
+
+.fastSearch{
+	width: 20em;
+	position: absolute;
+	top: 0.00001em;
+	left: 2.2em;
+	padding: 1.5em 0 0 1.5em;
+	background-color: $whiteOpacity;
+	height: 26.3em;
+	.block, .submit{
+		display: block;
+		margin-top: 1em;
+	}
+	h2{
+		font-size: 20px;
+		color: $darkGray;
+		font-weight: bold;
+		margin-bottom: 0.5em;
+	}
+	.inputText{
+		padding: 0.5em 0.75em;
+		@include border-radius(0.5em);
+		border: 1px solid $middleGray;
+	}
+	#location{
+		width: 25em;
+	}
+	select{
+		padding: 2em;
 	}
 }
 
