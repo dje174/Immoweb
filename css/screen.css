@@ -71,38 +71,24 @@ body .submit:hover {
   cursor: pointer; }
 /* line 29, ../scss/screen.scss */
 body h2 {
-  font-size: 22px;
   color: #30393e; }
 
 /* line 35, ../scss/screen.scss */
 header {
   width: 100%;
   border-bottom: 1px solid #30393e;
-  height: 3.5em;
   padding: 1em 0; }
-/* line 40, ../scss/screen.scss */
-header .logo {
-  position: relative;
-  left: 1em;
-  float: left; }
 /* line 44, ../scss/screen.scss */
 header .logo .slogan {
   position: absolute;
   top: 2.5em;
   color: #3c6caa;
   font-size: 16px; }
-/* line 51, ../scss/screen.scss */
-header nav {
-  float: left;
-  padding-left: 1em;
-  margin-top: 1.25em; }
 /* line 55, ../scss/screen.scss */
 header nav li {
   float: left;
-  width: 7.5em;
   font-size: 14px;
   text-align: center;
-  padding: 0.5em 1em 0 1em;
   text-transform: uppercase;
   color: #30393e; }
 /* line 63, ../scss/screen.scss */
@@ -279,24 +265,22 @@ header nav li a:hover {
 /* Formulaire recherche rapide */
 /* line 211, ../scss/screen.scss */
 .fastSearch {
-  width: 20em;
   position: absolute;
   top: 0.00001em;
-  left: 2.2em;
-  padding: 1.5em 0 0 1.5em;
+  padding-top: 1.5em;
   background-color: rgba(255, 255, 255, 0.7);
   height: 26.3em; }
-/* line 219, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
 .fastSearch .block, .fastSearch .submit {
   display: block;
   margin-top: 1em; }
-/* line 223, ../scss/screen.scss */
+/* line 224, ../scss/screen.scss */
 .fastSearch h2 {
   font-size: 20px;
   color: #30393e;
   font-weight: bold;
   margin-bottom: 0.5em; }
-/* line 229, ../scss/screen.scss */
+/* line 230, ../scss/screen.scss */
 .fastSearch .inputText {
   padding: 0.5em 0.75em;
   -webkit-border-radius: 0.5em;
@@ -305,78 +289,59 @@ header nav li a:hover {
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
   border: 1px solid #8f8f8f; }
-/* line 232, ../scss/screen.scss */
-.fastSearch #location {
-  width: 25em; }
-/* line 235, ../scss/screen.scss */
-.fastSearch select {
-  padding: 2em; }
 
 /* Section principale */
-/* line 242, ../scss/screen.scss */
+/* line 240, ../scss/screen.scss */
 .main {
   margin: 0em 2.2em 1.5em 2.2em; }
-/* line 244, ../scss/screen.scss */
+/* line 242, ../scss/screen.scss */
 .main .rubrique, .main .about {
   margin-top: 2.5em; }
-/* line 246, ../scss/screen.scss */
+/* line 244, ../scss/screen.scss */
 .main .rubrique article, .main .about article {
   float: left;
   border: 1px solid #d7d7d7;
-  margin: 1em 1em 0 0; }
-/* line 250, ../scss/screen.scss */
+  margin-top: 1em; }
+/* line 249, ../scss/screen.scss */
 .main .rubrique article img, .main .about article img {
   float: left;
   margin: 1.25em 1em 1.25em 1em;
   border: 1px solid #30393e; }
-/* line 255, ../scss/screen.scss */
+/* line 254, ../scss/screen.scss */
 .main .rubrique article .details, .main .about article .details {
   float: left;
-  margin-top: 0.5em;
-  width: 8em;
-  padding-right: 0.5em; }
-/* line 260, ../scss/screen.scss */
+  margin-top: 0.5em; }
+/* line 259, ../scss/screen.scss */
 .main .rubrique article .details h3, .main .about article .details h3 {
   color: #d13f3e;
   font-weight: bold; }
-/* line 264, ../scss/screen.scss */
+/* line 263, ../scss/screen.scss */
 .main .rubrique article .details .ville, .main .about article .details .ville {
   color: #b4c135; }
-/* line 267, ../scss/screen.scss */
+/* line 266, ../scss/screen.scss */
 .main .rubrique article .details .superficie, .main .about article .details .superficie {
   color: #30393e; }
-/* line 270, ../scss/screen.scss */
+/* line 269, ../scss/screen.scss */
 .main .rubrique article .details .descriptif, .main .about article .details .descriptif {
-  font-size: 16px;
   color: #30393e; }
 
-/* line 280, ../scss/screen.scss */
+/* line 279, ../scss/screen.scss */
 .about div {
-  margin: 1.5em 1.5em;
   float: left;
-  width: 42.5%;
   padding-right: 1.5em; }
-/* line 285, ../scss/screen.scss */
+/* line 284, ../scss/screen.scss */
 .about div h3 {
-  font-size: 20px;
   color: #30393e;
   margin-bottom: 0.5em; }
-/* line 290, ../scss/screen.scss */
-.about div .socials {
-  padding: 0.5em 1.5em 0 0; }
-/* line 293, ../scss/screen.scss */
-.about div .partnersImg {
-  padding: 1em 0.5em 0 0; }
 
-/* line 299, ../scss/screen.scss */
+/* line 298, ../scss/screen.scss */
 footer {
   width: 100%;
-  background-color: #30393e; }
+  background-color: #30393e;
+  padding-bottom: 2em; }
 /* line 302, ../scss/screen.scss */
 footer .sectionFooter {
-  float: left;
-  width: 20%;
-  padding: 1em 1.5em; }
+  float: left; }
 /* line 306, ../scss/screen.scss */
 footer .sectionFooter h4 {
   color: #d13f3e;
@@ -400,11 +365,11 @@ footer .sectionFooter #connect .inputText {
   border-radius: 0.5em;
   border: 1px solid #8f8f8f;
   display: block;
-  width: 20em; }
-/* line 325, ../scss/screen.scss */
+  margin-bottom: 0.75em; }
+/* line 326, ../scss/screen.scss */
 footer .sectionFooter #connect label {
   color: #8f8f8f; }
-/* line 328, ../scss/screen.scss */
+/* line 329, ../scss/screen.scss */
 footer .sectionFooter #connect .submitSmall {
   color: white;
   background-color: #3c6caa;
@@ -412,18 +377,180 @@ footer .sectionFooter #connect .submitSmall {
   margin: 0.5em 0em;
   font-size: 15px;
   border: none;
+  display: block;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em; }
-/* line 336, ../scss/screen.scss */
+/* line 338, ../scss/screen.scss */
 footer .sectionFooter #connect .submitSmall:hover {
   background-color: #224169;
   cursor: pointer; }
 
-/* line 345, ../scss/screen.scss */
+/* line 347, ../scss/screen.scss */
 header:after, .rubrique:after, .about:after, .rubrique article:after, .about article:after, .sectionFooter:after, footer:after {
   content: '';
   clear: both;
   display: block; }
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /* line 2, ../scss/_mediaQueries.scss */
+  .logo img {
+    margin: 1.5em auto 1em auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+
+  /* line 7, ../scss/_mediaQueries.scss */
+  .slogan {
+    visibility: hidden; }
+
+  /* line 10, ../scss/_mediaQueries.scss */
+  nav {
+    margin-top: 5em; }
+  /* line 12, ../scss/_mediaQueries.scss */
+  nav li {
+    width: 33%;
+    padding: 1em 0em; }
+
+  /* line 17, ../scss/_mediaQueries.scss */
+  #connect .inputText {
+    width: 15em; } }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  /* line 23, ../scss/_mediaQueries.scss */
+  h2 {
+    font-size: 18px; }
+
+  /* line 27, ../scss/_mediaQueries.scss */
+  .rubrique article .details, .about article .details {
+    width: 7em;
+    font-size: 15px;
+    padding: 0.5em 0; }
+
+  /* line 34, ../scss/_mediaQueries.scss */
+  .about div {
+    margin: 1.5em 0.5em; }
+  /* line 37, ../scss/_mediaQueries.scss */
+  .about h3 {
+    font-size: 16px; }
+  /* line 40, ../scss/_mediaQueries.scss */
+  .about .socials {
+    margin: 0.5em 1em 0 0em; }
+  /* line 43, ../scss/_mediaQueries.scss */
+  .about .partnersImg {
+    margin: 1em 0.5em 0 0; }
+
+  /* line 47, ../scss/_mediaQueries.scss */
+  .sectionFooter {
+    width: 85%;
+    padding: 1em 0 0 2em; }
+
+  /* line 51, ../scss/_mediaQueries.scss */
+  .controllers {
+    visibility: hidden; }
+
+  /* line 54, ../scss/_mediaQueries.scss */
+  .fastSearch {
+    width: 100%; }
+  /* line 56, ../scss/_mediaQueries.scss */
+  .fastSearch form {
+    width: 16em;
+    margin: 0 auto;
+    padding-left: 1.5em; }
+  /* line 62, ../scss/_mediaQueries.scss */
+  .fastSearch .prix input {
+    width: 5em;
+    margin-right: 0.5em; }
+  /* line 67, ../scss/_mediaQueries.scss */
+  .fastSearch #location {
+    width: 15em; } }
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  /* line 74, ../scss/_mediaQueries.scss */
+  .fastSearch {
+    width: 100%; }
+  /* line 76, ../scss/_mediaQueries.scss */
+  .fastSearch form {
+    width: 20em;
+    margin: 0 auto;
+    padding-left: 1.5em; }
+  /* line 82, ../scss/_mediaQueries.scss */
+  .fastSearch .prix input {
+    width: 7em;
+    margin: 0 0.5em 0 0.5em; }
+  /* line 87, ../scss/_mediaQueries.scss */
+  .fastSearch #location {
+    width: 18.5em; }
+
+  /* line 91, ../scss/_mediaQueries.scss */
+  .rubrique article, .about article {
+    height: 9em;
+    margin-right: 0.5em; }
+  /* line 94, ../scss/_mediaQueries.scss */
+  .rubrique article .details, .about article .details {
+    width: 8em;
+    font-size: 15px;
+    padding: 0.5em 0; } }
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  /* line 103, ../scss/_mediaQueries.scss */
+  .about div {
+    margin: 1.5em 0.5em; }
+  /* line 106, ../scss/_mediaQueries.scss */
+  .about h3 {
+    font-size: 18px; }
+  /* line 109, ../scss/_mediaQueries.scss */
+  .about .socials {
+    margin: 0.5em 1em 0 0em; }
+  /* line 112, ../scss/_mediaQueries.scss */
+  .about .partnersImg {
+    margin: 1em 0.5em 0 0; }
+
+  /* line 116, ../scss/_mediaQueries.scss */
+  .sectionFooter {
+    width: 45%;
+    padding: 1em 0 0 1em;
+    height: 15em; } }
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 123, ../scss/_mediaQueries.scss */
+  .fastSearch {
+    width: 100%; }
+  /* line 125, ../scss/_mediaQueries.scss */
+  .fastSearch form {
+    padding-left: 4.5em; }
+  /* line 130, ../scss/_mediaQueries.scss */
+  .fastSearch .prix input {
+    width: 7em;
+    margin: 0 0.5em 0 0.5em; }
+  /* line 135, ../scss/_mediaQueries.scss */
+  .fastSearch #location {
+    width: 18.5em; } }
+@media only screen and (min-width: 600px) and (max-width: 650px) {
+  /* line 142, ../scss/_mediaQueries.scss */
+  .rubrique article, .about article {
+    height: 9em;
+    margin-right: 0.5em; }
+  /* line 145, ../scss/_mediaQueries.scss */
+  .rubrique article .details, .about article .details {
+    width: 8.5em;
+    font-size: 15px;
+    padding: 0.5em 0.5em 0.5em 0; } }
+@media only screen and (min-width: 650px) and (max-width: 700px) {
+  /* line 154, ../scss/_mediaQueries.scss */
+  .rubrique article, .about article {
+    height: 9em;
+    margin-right: 1.75em; }
+  /* line 157, ../scss/_mediaQueries.scss */
+  .rubrique article .details, .about article .details {
+    width: 8.5em;
+    font-size: 15px;
+    padding: 0.5em 0.5em 0.5em 0; } }
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  /* line 166, ../scss/_mediaQueries.scss */
+  .rubrique article, .about article {
+    margin: 1em 2em 0 0; }
+  /* line 168, ../scss/_mediaQueries.scss */
+  .rubrique article .details, .about article .details {
+    width: 8em;
+    padding-right: 0.5em; } }

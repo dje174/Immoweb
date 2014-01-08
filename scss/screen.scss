@@ -27,7 +27,7 @@ body{
 		}
 	}
 	h2{
-		font-size: 22px;
+		//font-size: 22px;
 		color: $darkGray;
 	}
 }
@@ -35,12 +35,12 @@ body{
 header{
 	width: 100%;
 	border-bottom: 1px solid $darkGray;
-	height: 3.5em;
+	// height: 3.5em;
 	padding: 1em 0;
 	.logo{
-		position: relative;
-		left: 1em;
-		float: left;
+		// position: relative;
+		// left: 1em;
+		// float: left;
 		.slogan{
 			position: absolute;
 			top: 2.5em;
@@ -49,15 +49,15 @@ header{
 		}
 	}
 	nav{
-		float: left;
-		padding-left: 1em;
-		margin-top: 1.25em;
+		// float: left;
+		// padding-left: 1em;
+		// margin-top: 1.25em;
 		li{
 			float: left;
-			width: 7.5em;
+			// width: 7.5em;
 			font-size: 14px;
 			text-align: center;
-			padding: 0.5em 1em 0 1em;
+			// padding: 0.5em 1em 0 1em;
 			text-transform: uppercase;
 			color: $darkGray;
 			a{
@@ -209,11 +209,12 @@ header{
 /* Formulaire recherche rapide */
 
 .fastSearch{
-	width: 20em;
+	//width: 20em;
 	position: absolute;
 	top: 0.00001em;
-	left: 2.2em;
-	padding: 1.5em 0 0 1.5em;
+	//left: 2.2em;
+	padding-top: 1.5em;
+	//padding: 1.5em 0 0 1.5em;
 	background-color: $whiteOpacity;
 	height: 26.3em;
 	.block, .submit{
@@ -230,10 +231,7 @@ header{
 		@include inputsStyle();
 	}
 	#location{
-		width: 25em;
-	}
-	select{
-		padding: 2em;
+		//width: 25em;
 	}
 }
 
@@ -246,7 +244,8 @@ header{
 		article{
 			float: left;
 			border: 1px solid $whiteGray;
-			margin: 1em 1em 0 0;
+			//margin: 1em 1em 0 0;
+			margin-top: 1em;
 			img{
 				float: left;
 				margin: 1.25em 1em 1.25em 1em;
@@ -255,8 +254,8 @@ header{
 			.details{
 				float: left;
 				margin-top: 0.5em;
-				width: 8em;
-				padding-right: 0.5em;
+				//width: 8em;
+				//padding-right: 0.5em;
 				h3{
 					color: $clearRed;
 					font-weight: bold;
@@ -268,7 +267,7 @@ header{
 					color: $darkGray;
 				}
 				.descriptif{
-					font-size: 16px;
+					//font-size: 16px;
 					color: $darkGray;
 				}
 			}
@@ -278,20 +277,20 @@ header{
 .about{
 	@extend .rubrique;
 	div{
-		margin: 1.5em 1.5em;
+		//margin: 1.5em 1.5em;
 		float: left;
-		width: 42.5%;
+		//width: 42.5%;
 		padding-right: 1.5em;
 		h3{
-			font-size: 20px;
+			//font-size: 20px;
 			color: $darkGray;
 			margin-bottom: 0.5em;
 		}
 		.socials{
-			padding: 0.5em 1.5em 0 0;
+			//margin: 0.5em 1.5em 0 0;
 		}
 		.partnersImg{
-			padding: 1em 0.5em 0 0;
+			//margin: 1em 0.5em 0 0;
 		}
 	}
 }
@@ -299,10 +298,11 @@ header{
 footer{
 	width: 100%;
 	background-color: $darkGray;
+	padding-bottom: 2em;
 	.sectionFooter{
 		float: left;
-		width: 20%;
-		padding: 1em 1.5em;
+		//width: 20%;
+		//padding: 1em 1.5em;
 		h4{
 			color: $clearRed;
 			font-size: 19px;
@@ -320,7 +320,8 @@ footer{
 			.inputText{
 				@include inputsStyle();
 				display: block;
-				width: 20em;
+				//width: 20em;
+				margin-bottom: 0.75em;
 			}
 			label{
 				color: $middleGray;
@@ -332,6 +333,7 @@ footer{
 				margin: 0.5em 0em;
 				font-size: 15px;
 				border: none;
+				display: block;
 				@include border-radius(0.5em);
 				&:hover{
 					background-color: $darkBlue;
@@ -345,3 +347,5 @@ footer{
 header:after, .rubrique:after, .rubrique article:after, .sectionFooter:after, footer:after{
 	@include reinitFloat();
 }
+
+@import "mediaQueries";
