@@ -70,6 +70,12 @@
 	}
 }
 
+@media only screen and (min-width : 500px){
+	h2{
+		font-size: 22px;
+	}
+}
+
 @media only screen and (min-width : 500px) and (max-width : 600px){
 	.fastSearch{
 		width: 100%;
@@ -168,6 +174,295 @@
 		.details{
 			width: 8em;
 			padding-right: 0.5em;
+		}
+	}
+}
+
+@media only screen and (min-width : 800px) and (max-width: 1000px){
+	.logo img{
+		margin: 1.5em auto 1em auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	.slogan{
+		visibility: hidden;
+	}
+	nav{
+		margin-top: 5em;
+		li{
+			width: 14%;
+			padding: 1em 0em;
+		}
+	}
+	.fastSearch{
+		width: 20em;
+		form{
+			//margin: 0 auto;
+			padding-left: 3.5em;
+		}
+		.prix{
+			input{
+				width: 7em;
+				margin: 0 0.5em 0 0.5em;
+			}
+		}
+		#location{
+			width: 18.5em;
+		}
+	}
+	.about{
+		div{
+			margin: 1.5em 0.5em;
+		}
+		h3{
+			font-size: 18px;
+		}
+		.socials{
+			margin: 0.5em 1em 0 0em;
+		}
+		.partnersImg{
+			margin: 1em 0.5em 0 0;
+		}
+	}
+	.sectionFooter{
+		width: 22.5%;
+		padding: 1em 0 0 1em;
+		height: 15em;
+	}
+}
+
+@media only screen and (min-width : 800px) and (max-width: 900px){
+	.rubrique {
+		margin-left: 4em;
+	}
+	.rubrique article{
+		margin: 1em 2em 0 0;
+		.details{
+			width: 8em;
+			padding-right: 0.5em;
+		}
+	}
+}
+
+@media only screen and (min-width : 900px) and (max-width: 1000px){
+	.rubrique {
+		margin-left: 10em;
+	}
+	.rubrique article{
+		margin: 1em 2em 0 0;
+		.details{
+			width: 8em;
+			padding-right: 0.5em;
+		}
+	}
+}
+
+@media only screen and (min-width : 1000px) and (max-width: 1280px){
+	.logo{
+		position: relative;
+		left: 1em;
+		float: left;
+	}
+	.fastSearch{
+		width: 20em;
+		//left: 2.2em;
+		padding: 1.5em 0 0 1.5em;
+		form{
+			//margin: 0 auto;
+			padding-left: 2.75em;
+		}
+		.prix{
+			input{
+				width: 7em;
+				margin: 0 0.5em 0 0.5em;
+			}
+		}
+		#location{
+			width: 18.5em;
+		}
+	}
+	.sectionFooter{
+		width: 18%;
+		padding: 1em 1.5em;
+	}
+	.about{
+		div{
+		margin: 1.5em 1.5em;
+		width: 40%;
+		h3{
+			font-size: 20px;
+		}
+		.socials{
+			margin: 0.5em 0.5em 0 0;
+		}
+		.partnersImg{
+			margin: 0.5em 1.75em 0 0;
+		}
+		}
+	}
+}
+
+@media only screen and (min-width : 1000px) and (max-width: 1100px){
+	.rubrique article{
+		margin: 1em 2em 0 0;
+		.details{
+			width: 8em;
+			padding-right: 0.5em;
+		}
+	}
+	nav{
+		float: left;
+		padding-left: 5em;
+		margin-top: 1.25em;
+		height: 2em;
+	}
+}
+
+
+@media only screen and (min-width : 1100px) and (max-width: 1280px){
+	.rubrique{
+		margin-left: 2em;
+	}
+	.rubrique article{
+		margin: 1em 1em 0 0;
+		.details{
+			width: 8em;
+			padding-right: 0.5em;
+		}
+	}
+	nav{
+		float: left;
+		padding-left: 5em;
+		margin-top: 1.25em;
+		height: 2em;
+		li{
+			padding-right: 2em;
+		}
+	}
+
+}
+@media only screen and (min-width : 1280px) and (max-width: 1500px){
+	.logo{
+		position: relative;
+		left: 1em;
+		float: left;
+	}
+	nav{
+		float: left;
+		padding-left: 5em;
+		margin-top: 1.25em;
+		height: 2em;
+		li{
+			padding-right: 3em;
+		}
+	}
+	.fastSearch{
+		width: 20em;
+		//left: 2.2em;
+		padding: 1.5em 0 0 1.5em;
+		form{
+			padding-left: 2.75em;
+		}
+		.prix{
+			input{
+				width: 7em;
+				margin: 0 0.5em 0 0.5em;
+			}
+		}
+		#location{
+			width: 18.5em;
+		}
+	}
+	.sectionFooter{
+		width: 18%;
+		padding: 1em 1.5em;
+	}
+	.about{
+		div{
+		margin: 1.5em 1.5em;
+		width: 42.5%;
+		height: 8em;
+		h3{
+			font-size: 20px;
+		}
+		.socials{
+			margin: 0.5em 1.5em 0 0;
+		}
+		.partnersImg{
+			margin: 0.5em 1.5em 0 0;
+		}
+		}
+	}
+	.rubrique{
+		margin-left: 2em;
+	}
+	.rubrique article{
+		margin: 1em 1.5em 0 0;
+		.details{
+			width: 8em;
+			padding-right: 0.5em;
+		}
+	}
+}
+
+@media only screen and (min-width : 1500px){
+	h2{
+		font-size: 24px;
+	}
+	.logo{
+		position: relative;
+		left: 1em;
+		float: left;
+	}
+	nav{
+		float: left;
+		padding-left: 7em;
+		margin-top: 1.25em;
+		height: 2em;
+		li{
+			padding-right: 5.5em;
+		}
+	}
+	.main{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.rubrique article{
+		margin: 1em 1.5em 0 0;
+		.details{
+			width: 8em;
+			padding-right: 0.5em;
+		}
+	}
+	.sectionFooter{
+		width: 20%;
+		padding: 1em 1.5em;
+	}
+	.about{
+		div{
+			margin: 1.5em 1.5em;
+			width: 42.5%;
+			height: 8em;
+			h3{
+				font-size: 22px;
+			}
+		}
+	}
+	.fastSearch{
+		width: 20em;
+		//left: 2.2em;
+		padding: 1.5em 0 0 1.5em;
+		form{
+			padding-left: 2.75em;
+		}
+		.prix{
+			input{
+				width: 7em;
+				margin: 0 0.5em 0 0.5em;
+			}
+		}
+		#location{
+			width: 18.5em;
 		}
 	}
 }

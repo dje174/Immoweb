@@ -185,12 +185,13 @@ header{
 #mySwipe{
 	max-width: 1200px;
 	margin: 0 auto;
+	position: relative;
 }
 .slider{
 	background-color: $clearBlue;
 	height: 500px;
 	position: relative;
-	max-width: 1280px;
+	max-width: 2000px;
 	.controllers{
 		margin: auto;
 		position: absolute;
@@ -245,7 +246,7 @@ header{
 			float: left;
 			border: 1px solid $whiteGray;
 			//margin: 1em 1em 0 0;
-			margin-top: 1em;
+			margin-top: 1.5em;
 			img{
 				float: left;
 				margin: 1.25em 1em 1.25em 1em;
