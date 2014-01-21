@@ -642,7 +642,7 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
   /* line 261, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
-    left: 1em;
+    left: 2em;
     float: left; }
 
   /* line 266, ../scss/_mediaQueries.scss */
@@ -719,7 +719,7 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
   /* line 345, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
-    left: 1em;
+    left: 2em;
     float: left; }
 
   /* line 350, ../scss/_mediaQueries.scss */
@@ -786,7 +786,7 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
   /* line 412, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
-    left: 1em;
+    left: 2em;
     float: left; }
 
   /* line 417, ../scss/_mediaQueries.scss */
