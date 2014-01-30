@@ -23,7 +23,7 @@
 	h2{
 		font-size: 18px;
 	}
-	.rubrique article{
+	.rubrique figure{
 		.details{
 			width: 7em;
 			font-size: 15px;
@@ -94,7 +94,7 @@
 			width: 18.5em;
 		}
 	}
-	.rubrique article{
+	.rubrique figure{
 		height: 9em;
 		margin-right: 0.5em;
 		.details{
@@ -145,7 +145,7 @@
 }
 
 @media only screen and (min-width : 600px) and (max-width: 650px){
-	.rubrique article{
+	.rubrique figure{
 		height: 9em;
 		margin-right: 0.5em;
 		.details{
@@ -157,7 +157,7 @@
 }
 
 @media only screen and (min-width : 650px) and (max-width: 700px){
-	.rubrique article{
+	.rubrique figure{
 		height: 9em;
 		margin-right: 1.75em;
 		.details{
@@ -169,7 +169,7 @@
 }
 
 @media only screen and (min-width : 700px) and (max-width: 800px){
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 2em 0 0;
 		.details{
 			width: 8em;
@@ -235,7 +235,7 @@
 	.rubrique {
 		margin-left: 4em;
 	}
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 2em 0 0;
 		.details{
 			width: 8em;
@@ -248,7 +248,7 @@
 	.rubrique {
 		margin-left: 10em;
 	}
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 2em 0 0;
 		.details{
 			width: 8em;
@@ -303,7 +303,7 @@
 }
 
 @media only screen and (min-width : 1000px) and (max-width: 1100px){
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 2em 0 0;
 		.details{
 			width: 8em;
@@ -323,7 +323,7 @@
 	.rubrique{
 		margin-left: 2em;
 	}
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 1em 0 0;
 		.details{
 			width: 8em;
@@ -396,7 +396,7 @@
 	.rubrique{
 		margin-left: 2em;
 	}
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 1em 0 0;
 		.details{
 			width: 8em;
@@ -427,7 +427,7 @@
 		width: 1200px;
 		margin: 0 auto;
 	}
-	.rubrique article{
+	.rubrique figure{
 		margin: 1em 1.5em 0 0;
 		.details{
 			width: 8em;
@@ -461,7 +461,7 @@
 				margin: 0 0.5em 0 0.5em;
 			}
 		}
-		#location{
+		#localisation{
 			width: 18.5em;
 		}
 	}

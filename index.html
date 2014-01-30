@@ -2,12 +2,13 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Immoweb: 1er site immobilier en Belgique</title>
-        <meta name="description" content="">
+        <meta name="description" content="Immoweb">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="home.ico" >
@@ -22,11 +23,12 @@
         <header>
             <div class="logo">
                 <a href="index.html" title="Accueil Immoweb">
-                    <img src="img/logo.png" alt="Logo représentatif d'Immoweb ">
-                    <span class="slogan">Le 1er site immobilier belge</span>
+                    <img src="img/logo.png" alt="Logo représentatif d'Immoweb">
+                    <h1 class="slogan">Le 1er site immobilier belge</h1>
                 </a>
             </div>
-            <nav>
+            <nav role="navigation">
+                <h1 class="cache">Navigation</h1>
                 <ul class="onglets">
                     <li><a id="vendre" href="#">Vendre</a></li>
                     <li><a id="louer" href="#">Louer</a></li>
@@ -69,9 +71,9 @@
                         <option value="Promotions">Promotions</option>
                     </select>
                     <label for="localisation" class="block">Localité</label>
-                    <input type="text" placeholder="Région, Ville, Code postal, ..." class="inputText" id="location">
+                    <input id="localisation" type="text" placeholder="Région, Ville, Code postal, ..." class="inputText">
                     <label for="prix" class="block">Prix entre</label>
-                    <span class="prix"><input type="text" class="inputText">et<input type="text" class="inputText">€</span>
+                    <span class="prix"><input id="prix" type="text" class="inputText">et<input title="prix" type="text" class="inputText">€</span>
                     <a href="#" class="block">Recherche avancée</a>
                     <input type="submit" value="Rechercher" class="submit">
                 </form>
@@ -81,180 +83,192 @@
               <button id="right" onclick='mySwipe.next()'><img src="img/icons/right.png" alt="Voir la photo de droite"></button>
             </div>
         </div>
-        <section class="main">
-            <section class="rubrique">
+        <div class="main">
+            <article class="rubrique">
                 <h2 class="logoHome">Les derniers biens à la une</h2>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Maison 3&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img1.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">175 000€</h3>
                             <span class="ville">Bruxelles</span> - <span class="superficie">30m²</span>
+                            <span itemprop="price" class="price">175&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Maison 3 chambres
+                                Maison 3&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Appartement 2&nbsp;pièces</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img2.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">125 000€</h3>
                             <span class="ville">Liège</span> - <span class="superficie">40m²</span>
+                            <span itemprop="price" class="price">125&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Appartement 2 pièces
+                                Appartement 2&nbsp;pièces
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Maison 5&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img3.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">400 000€</h3>
                             <span class="ville">Mons</span> - <span class="superficie">50m²</span>
+                            <span itemprop="price" class="price">400&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Maison 5 chambres
+                                Maison 5&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Appartement 3&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img4.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">245 000€</h3>
                             <span class="ville">Charleroi</span> - <span class="superficie">40m²</span>
+                            <span itemprop="price" class="price">245&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Appartement 3 chambres
+                                Appartement 3&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
-            </section>
-            <section class="rubrique">
+            </article>
+            <article class="rubrique">
                 <h2 class="logoHome">Dans la section à vendre</h2>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Maison 3&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img5.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">375 000€</h3>
                             <span class="ville">Bruxelles</span> - <span class="superficie">30m²</span>
+                            <span itemprop="price" class="price">375&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Maison 3 chambres
+                                Maison 3&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Appartement 2&nbsp;pièces</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img6.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">225 000€</h3>
                             <span class="ville">Liège</span> - <span class="superficie">40m²</span>
+                            <span itemprop="price" class="price">225&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Appartement 2 pièces
+                                Appartement 2&nbsp;pièces
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Maison 5&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img7.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">420 000€</h3>
                             <span class="ville">Mons</span> - <span class="superficie">50m²</span>
+                            <span itemprop="price" class="price">420&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Maison 5 chambres
+                                Maison 5&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Appartement 3&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img8.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">345 000€</h3>
                             <span class="ville">Charleroi</span> - <span class="superficie">40m²</span>
+                            <span itemprop="price" class="price">345&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Appartement 3 chambres
+                                Appartement 3&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
-            </section>
-            <section class="rubrique">
+            </article>
+            <article class="rubrique">
                 <h2 class="logoHome">Dans la section à louer</h2>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Maison 3&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img9.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">125 000€</h3>
                             <span class="ville">Gand</span> - <span class="superficie">30m²</span>
+                            <span itemprop="price" class="price">125&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Maison 3 chambres
+                                Maison 3&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Appartement 2&nbsp;pièces</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img10.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">290 000€</h3>
                             <span class="ville">Bruxelles</span> - <span class="superficie">40m²</span>
+                            <span itemprop="price" class="price">290&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Appartement 2 pièces
+                                Appartement 2&nbsp;pièces
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Maison 5&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img11.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">240 000€</h3>
                             <span class="ville">Liège</span> - <span class="superficie">50m²</span>
+                            <span itemprop="price" class="price">240&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Maison 5 chambres
+                                Maison 5&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
                 <a href="#" class="articleBiens">
-                    <article itemscope itemtype="http://schema.org/Product">
+                    <h3 class="cache">Appartement 3&nbsp;chambres</h3>
+                    <figure itemscope itemtype="http://schema.org/Product">
                         <img src="img/homeSmall/img12.gif" alt="Bien n°1" itemprop="image">
                         <div class="details" itemprop="offers">
-                            <h3 itemprop="price">315 000€</h3>
                             <span class="ville">Bruxelles</span> - <span class="superficie">40m²</span>
+                            <span itemprop="price" class="price">315&nbsp;000€</span>
                             <p class="descriptif" itemprop="description">
-                                Appartement 3 chambres
+                                Appartement 3&nbsp;chambres
                             </p>
-                            <a href="#" class="plus">En savoir plus</a>
+                            <input type="button" value="En savoir plus" class="buttonMore"> 
                         </div>
-                    </article>
+                    </figure>
                 </a>
-            </section>
+            </article>
             <section class="about">
                 <h2 class="logoAll">Tout sur Immoweb</h2>
                 <div>
                     <h3 id="guides">Guides immobiliers</h3>
-                    <a href="#" title"Voir le guide"><img class="socials" src="img/gui1.jpg" alt="Lien vers guide Immobilier 1"></a>
-                    <a href="#" title"Voir le guide"><img class="socials" src="img/gui2.jpg" alt="Lien vers guide Immobilier 2"></a>
-                    <a href="#" title"Voir le guide"><img class="socials" src="img/gui3.jpg" alt="Lien vers guide Immobilier 3"></a>
-                    <a href="#" title"Voir le guide"><img class="socials" src="img/gui4.jpg" alt="Lien vers guide Immobilier 4"></a>
+                    <a href="#" title="Voir le guide"><img class="socials" src="img/gui1.jpg" alt="Lien vers guide Immobilier 1"></a>
+                    <a href="#" title="Voir le guide"><img class="socials" src="img/gui2.jpg" alt="Lien vers guide Immobilier 2"></a>
+                    <a href="#" title="Voir le guide"><img class="socials" src="img/gui3.jpg" alt="Lien vers guide Immobilier 3"></a>
+                    <a href="#" title="Voir le guide"><img class="socials" src="img/gui4.jpg" alt="Lien vers guide Immobilier 4"></a>
                 </div>
                 <div>
                     <h3 id="partners">Partenaires Immoweb</h3>
@@ -270,17 +284,18 @@
                 </div>
                 <div>
                     <h3 id="where">Où trouver Immoweb</h3>
-                    <a href="#" title"Aller vers la page Facebook Immoweb"><img class="socials" src="img/icons/facebook.png" alt="lien vers Facebook Immoweb"></a>
-                    <a href="#" title"Aller vers la page Twitter Immoweb"><img class="socials" src="img/icons/twitter.png" alt="lien vers Twitter Immoweb"></a>
-                    <a href="#" title"Aller vers l'application mobile Immoweb"><img class="socials" src="img/icons/mobile.png" alt="lien vers Application mobile Immoweb"></a>
-                    <a href="#" title"Aller vers l'application tablette Immoweb"><img class="socials" src="img/icons/mobile2.png" alt="lien vers Application tablette Immoweb"></a>
-                    <a href="#" title"Aller vers l'application Android Immoweb"><img class="socials" src="img/icons/android.png" alt="lien vers Application android Immoweb"></a>
+                    <a href="#" title="Aller vers la page Facebook Immoweb"><img class="socials" src="img/icons/facebook.png" alt="lien vers Facebook Immoweb"></a>
+                    <a href="#" title="Aller vers la page Twitter Immoweb"><img class="socials" src="img/icons/twitter.png" alt="lien vers Twitter Immoweb"></a>
+                    <a href="#" title="Aller vers l'application mobile Immoweb"><img class="socials" src="img/icons/mobile.png" alt="lien vers Application mobile Immoweb"></a>
+                    <a href="#" title="Aller vers l'application tablette Immoweb"><img class="socials" src="img/icons/mobile2.png" alt="lien vers Application tablette Immoweb"></a>
+                    <a href="#" title="Aller vers l'application Android Immoweb"><img class="socials" src="img/icons/android.png" alt="lien vers Application android Immoweb"></a>
                 </div>
             </section>
-        </section>
+        </div>
         <footer>
+            <h2 class="cache">A propos d'Immoweb</h2>
             <div class="sectionFooter">
-                <h4>Liens infos direct</h4>
+                <h3>Liens infos direct</h3>
                     <a href="#">Mes Recherches</a>
                     <a href="#">Acheter</a><a href="#">Louer</a>
                     <a href="#">Bâtir & Rénover</a>
@@ -291,7 +306,7 @@
                     <a href="#">Location de vacances</a>
             </div>
             <div class="sectionFooter">
-                <h4>Les rubriques</h4>
+                <h3>Les rubriques</h3>
                     <a href="#">Type de ventes</a>
                     <a href="#">Chauffage</a>
                     <a href="#">Contrats</a>
@@ -299,19 +314,19 @@
                     <a href="#">Vendre</a>
             </div>
             <div class="sectionFooter">
-                <h4>Déjà inscrit?</h4>
+                <h3>Déjà inscrit?</h3>
                     <form id="connect">
-                        <label for="E-mail">Votre e-mail:</label>
-                        <input type="text" placeholder="Votre e-mail" class="inputText">
-                        <label for="Mot de passe">Votre mot de passe:</label>
-                        <input type="text" placeholder="Votre mot de passe" class="inputText">
-                        <label for="Souvenir"><input type="checkbox">Se souvenir de moi</label>
-                        <input type="submit" class="submitSmall" value="Se connecter">
+                        <label for="e-mail">Votre e-mail:</label>
+                        <input id="e-mail" type="text" placeholder="Votre e-mail" class="inputText">
+                        <label for="pwd">Votre mot de passe:</label>
+                        <input id="pwd" type="text" placeholder="Votre mot de passe" class="inputText">
+                        <label for="remember"><input type="checkbox" title="remember-me">Se souvenir de moi</label>
+                        <input id="remember" type="submit" class="submitSmall" value="Se connecter">
                         <a href="#">J'ai oublié mon mot de passe</a>
                     </form>
             </div>
             <div class="sectionFooter">
-                <h4>© IMMOWEB SA/NV 2013</h4>
+                <h3>© IMMOWEB SA/NV 2013</h3>
                     <a href="#">Qui sommes-nous?</a>
                     <a href="#">Nous contacter</a>
                     <a href="#">Suggestions</a>
@@ -327,19 +342,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src='js/swipe.js'></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
         <script>
 
         // pure JS

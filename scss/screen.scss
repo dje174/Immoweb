@@ -31,6 +31,10 @@ body{
 		//font-size: 22px;
 		color: $darkGray;
 	}
+	.cache{
+		display: none;
+		position: absolute;
+	}
 }
 
 header{
@@ -232,7 +236,7 @@ header{
 	.inputText{
 		@include inputsStyle();
 	}
-	#location{
+	#localisation{
 		//width: 25em;
 	}
 }
@@ -243,7 +247,7 @@ header{
 	margin: 0em 2.2em 1.5em 2.2em;
 	.rubrique{
 		margin-top: 2.5em;
-		article{
+		figure{
 			float: left;
 			border: 1px solid $whiteGray;
 			//margin: 1em 1em 0 0;
@@ -258,7 +262,7 @@ header{
 				margin-top: 0.5em;
 				//width: 8em;
 				//padding-right: 0.5em;
-				h3{
+				.price{
 					color: $clearRed;
 					font-weight: bold;
 				}
@@ -269,8 +273,20 @@ header{
 					color: $darkGray;
 				}
 				.descriptif{
-					//font-size: 16px;
 					color: $darkGray;
+					line-height: 1.25;
+					padding-bottom: 0.25em;
+				}
+				.buttonMore{
+					color: white;
+					background-color: $clearBlue;
+					padding: 0.5em 0.75em;
+					border: none;
+					@include border-radius(0.5em);
+					&:hover{
+						background-color: $darkBlue;
+						cursor: pointer;
+					}
 				}
 			}
 		}
@@ -305,7 +321,7 @@ footer{
 		float: left;
 		//width: 20%;
 		//padding: 1em 1.5em;
-		h4{
+		h3{
 			color: $clearRed;
 			font-size: 19px;
 		}
@@ -313,7 +329,6 @@ footer{
 			color:white;
 			font-size: 16px;
 			display: block;
-			font-family: "Lato";
 			&:hover{
 				color: $middleGray;
 			}
