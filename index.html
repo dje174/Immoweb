@@ -30,22 +30,22 @@
             <nav role="navigation">
                 <h1 class="cache">Navigation</h1>
                 <ul class="onglets">
-                    <li><a id="vendre" href="#">Vendre</a></li>
-                    <li><a id="louer" href="#">Louer</a></li>
-                    <li><a id="vacances" href="#">Vacances</a></li>
-                    <li><a id="decoration" href="#">Décoration</a></li>
-                    <li><a id="batir" href="#">Bâtir</a></li>
-                    <li><a id="renover" href="#">Rénover</a></li>
-                    <li><a href="#" id="user">Compte</a></li>
+                    <li><span class="icon-1"></span><a id="vendre" href="#">Vendre</a></li>
+                    <li><span class="icon-2"></span><a id="louer" href="#">Louer</a></li>
+                    <li><span class="icon-3"></span><a id="vacances" href="#">Vacances</a></li>
+                    <li><span class="icon-4"></span><a id="decoration" href="#">Décoration</a></li>
+                    <li><span class="icon-5"></span><a id="batir" href="#">Bâtir</a></li>
+                    <li><span class="icon-6"></span><a id="renover" href="#">Rénover</a></li>
+                    <li><span class="icon-7"></span><a href="#" id="user">Compte</a></li>
                 </ul>
             </nav>
         </header>
         <div class="slider">
             <div id='mySwipe' class='swipe'>
               <div class='swipe-wrap'>
-                <div><img src="img/maison1slide.png" alt="Bien a vendre - Maisons"></div>
-                <div><img src="img/maison2slide.png" alt="Bien a vendre - Maisons"></div>
-                <div><img src="img/maison3slide.png" alt="Bien a vendre - Maisons"></div>
+                <div><img id="img1" src="" alt=""></div>
+                <div><img id="img2" src="" alt=""></div>
+                <div><img id="img3" src="" alt=""></div>
               </div>
             </div>
             <div class="fastSearch">
@@ -78,14 +78,13 @@
                     <input type="submit" value="Rechercher" class="submit">
                 </form>
             </div>
-            <div class="controllers">
-              <button id="left" onclick='mySwipe.prev()'><img src="img/icons/left.png" alt="Voir la photo de gauche"></button> 
-              <button id="right" onclick='mySwipe.next()'><img src="img/icons/right.png" alt="Voir la photo de droite"></button>
+            <div class="controllers cache">
+              <button onclick='mySwipe.prev()'></button>
             </div>
         </div>
         <div class="main">
             <article class="rubrique">
-                <h2 class="logoHome">Les derniers biens à la une</h2>
+                <h2><span class="logoHome logo-home"></span>Les derniers biens à la une</h2>
                 <a href="#" class="articleBiens">
                     <h3 class="cache">Maison 3&nbsp;chambres</h3>
                     <figure itemscope itemtype="http://schema.org/Product">
@@ -144,7 +143,7 @@
                 </a>
             </article>
             <article class="rubrique">
-                <h2 class="logoHome">Dans la section à vendre</h2>
+                <h2><span class="logoHome logo-home"></span>Dans la section à vendre</h2>
                 <a href="#" class="articleBiens">
                     <h3 class="cache">Maison 3&nbsp;chambres</h3>
                     <figure itemscope itemtype="http://schema.org/Product">
@@ -203,7 +202,7 @@
                 </a>
             </article>
             <article class="rubrique">
-                <h2 class="logoHome">Dans la section à louer</h2>
+                <h2><span class="logoHome logo-home"></span>Dans la section à louer</h2>
                 <a href="#" class="articleBiens">
                     <h3 class="cache">Maison 3&nbsp;chambres</h3>
                     <figure itemscope itemtype="http://schema.org/Product">
@@ -262,16 +261,16 @@
                 </a>
             </article>
             <section class="about">
-                <h2 class="logoAll">Tout sur Immoweb</h2>
+                <h2><span class="logoAll logo-all"></span>Tout sur Immoweb</h2>
                 <div>
-                    <h3 id="guides">Guides immobiliers</h3>
+                    <h3><span class="guides logo-guide"></span>Guides immobiliers</h3>
                     <a href="#" title="Voir le guide"><img class="socials" src="img/gui1.jpg" alt="Lien vers guide Immobilier 1"></a>
                     <a href="#" title="Voir le guide"><img class="socials" src="img/gui2.jpg" alt="Lien vers guide Immobilier 2"></a>
                     <a href="#" title="Voir le guide"><img class="socials" src="img/gui3.jpg" alt="Lien vers guide Immobilier 3"></a>
                     <a href="#" title="Voir le guide"><img class="socials" src="img/gui4.jpg" alt="Lien vers guide Immobilier 4"></a>
                 </div>
                 <div>
-                    <h3 id="partners">Partenaires Immoweb</h3>
+                    <h3><span class="partners logo-partners"></span>Partenaires Immoweb</h3>
                     <a href="#"><img src="img/part1.png" alt="Lien vers partenaire 1" class="partnersImg"></a>
                     <a href="#"><img src="img/part2.jpg" alt="Lien vers partenaire 2" class="partnersImg"></a>
                     <a href="#"><img src="img/part3.jpg" alt="Lien vers partenaire 3" class="partnersImg"></a>
@@ -279,16 +278,16 @@
                     <a href="#"><img src="img/part5.jpg" alt="Lien vers partenaire 5" class="partnersImg"></a>
                 </div>
                 <div>
-                    <h3 id="news">Quoi de neuf sur Immoweb</h3>
+                    <h3><span class="news logo-news"></span>Quoi de neuf sur Immoweb</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, consequuntur, voluptates, explicabo et consectetur ut ab quas ipsam sapiente at autem beatae magni unde obcaecati soluta harum eligendi sequi quos.</p>
                 </div>
                 <div>
-                    <h3 id="where">Où trouver Immoweb</h3>
-                    <a href="#" title="Aller vers la page Facebook Immoweb"><img class="socials" src="img/icons/facebook.png" alt="lien vers Facebook Immoweb"></a>
-                    <a href="#" title="Aller vers la page Twitter Immoweb"><img class="socials" src="img/icons/twitter.png" alt="lien vers Twitter Immoweb"></a>
-                    <a href="#" title="Aller vers l'application mobile Immoweb"><img class="socials" src="img/icons/mobile.png" alt="lien vers Application mobile Immoweb"></a>
-                    <a href="#" title="Aller vers l'application tablette Immoweb"><img class="socials" src="img/icons/mobile2.png" alt="lien vers Application tablette Immoweb"></a>
-                    <a href="#" title="Aller vers l'application Android Immoweb"><img class="socials" src="img/icons/android.png" alt="lien vers Application android Immoweb"></a>
+                    <h3><span class="where logo-where"></span>Où trouver Immoweb</h3>
+                    <a href="#" title="Aller vers la page Facebook Immoweb"><span class="socialsIcons facebook"></span></a>
+                    <a href="#" title="Aller vers la page Twitter Immoweb"><span class="socialsIcons twitter"></span></a>
+                    <a href="#" title="Aller vers l'application mobile Immoweb"><span class="socialsIcons smartphone"></span></a>
+                    <a href="#" title="Aller vers l'application tablette Immoweb"><span class="socialsIcons tablet"></span></a>
+                    <a href="#" title="Aller vers l'application Android Immoweb"><span class="socialsIcons android"></span></a>
                 </div>
             </section>
         </div>
@@ -357,6 +356,19 @@
           //callback: function(index, element) {},
           transitionEnd: function(index, element) {}
         });
+
+        // var elem = document.getElementById('mySwipe');
+        // var currentSlide = getPos() + 1; // because slide count starts at 0
+        // var totalSlides = getNumSlides();
+        // window.mySwipe = Swipe(elem, {
+        //   auto: 3000,
+        //   continuous: true,
+        //   disableScroll: true,
+        //   callback: function(index, element) {
+        //     document.getElementById('slide-indicators').innerHTML = currentSlides + ' / ' + totalSlides;
+        //   }
+        // });
+        // document.getElementById('slide-indicators').innerHTML = currentSlides + ' / ' + totalSlides;
 
         // with jQuery
         //window.mySwipe = $('#mySwipe').Swipe().data('Swipe');

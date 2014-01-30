@@ -78,96 +78,100 @@ header{
 
 /* LOGO MENU + Logos */
 
-.logoHome:before{
-	content: url(../img/icons/homeHover.png);
-	padding-right: 0.5em;
+
+
+.onglets span, .logoHome, .logoAll, .partners, .where, .news, .guides {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+    background: url("../img/icons/sprite.png") no-repeat;
+}
+.socialsIcons{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	position: relative;
+    background: url("../img/icons/sprite.png") no-repeat;
 }
 
-.logoAll:before{
-	content: url(../img/icons/all.png);
-	padding-right: 0.5em;
-}
-
-#vendre:before{
-	content: url(../img/icons/home.png);
-	position: relative;
-	top: -1.25em;
-	left: 2.5em;
-	&:hover{
-		content: url(../img/icons/homeHover.png);
+nav{	
+	.icon-1 { 
+		background-position: -130px 0px;
+		left: 2.5em;
+    	top: -1.25em;
+	}
+	.icon-2 {
+		background-position: -130px 0;
+		left: 2.15em;
+    	top: -1.25em;	
+	}
+	.icon-3 {
+		left: 3em;
+    	top: -1.25em;
+	}
+	.icon-4 {
+		left: 3.5em;
+    	top: -1.25em;
+	}
+	.icon-5 {
+		left: 1.75em;
+    	top: -1.25em;
+		background-position: -110px 0;
+	}
+	.icon-6 {
+		left: 2.75em;
+    	top: -1.25em;
+		background-position: -195px 0;
+	}
+	.icon-7 {
+		left: 2.75em;
+    	top: -1.25em;
+		background-position: -320px 0;
+		
 	}
 }
 
-#louer:before{
-	content: url(../img/icons/home.png);
-	position: relative;
-	top: -1.25em;
-	left: 2.25em;
-	&:hover{
-		content: url(../img/icons/homeHover.png);
+.main{
+	.logo-home{
+		background-position: -151px 0;
+		left: -0.25em;
 	}
-}
-
-#vacances:before{
-	content: url(../img/icons/airplane.png);
-	position: relative;
-	top: -1.25em;
-	left: 3em;
-	&:hover{
-		content: url(../img/icons/airplaneHover.png);
+	.logo-all{
+		background-position: -47px 0;
+		left: -0.25em;
 	}
-}
-#decoration:before{
-	content: url(../img/icons/paint.png);
-	position: relative;
-	top: -1.25em;
-	left: 3.5em;
-	&:hover{
-		content: url(../img/icons/paintHover.png);
+	.logo-guide{
+		background-position: -70px 0;
+		left: -0.25em;
 	}
-}
-#batir:before{
-	content: url(../img/icons/hammer.png);
-	position: relative;
-	top: -1.25em;
-	left: 1.75em;
-	&:hover{
-		content: url(../img/icons/hammerHover.png);
+	.logo-news{
+		background-position: -300px 0;
+		left: -0.25em;
 	}
-}
-#renover:before{
-	content: url(../img/icons/loop.png);
-	position: relative;
-	top: -1.25em;
-	left: 2.75em;
-	&:hover{
-		content: url(../img/icons/loopHover.png);
+	.logo-partners{
+		background-position: -237px 0;
+		left: -0.25em;
 	}
-}
-#user:before{
-	content: url(../img/icons/user.png);
-	position: relative;
-	top: -1.25em;
-	left: 2.75em;
-	&:hover{
-		content: url(../img/icons/loopHover.png);
+	.logo-where{
+		background-position: -338px 0;
+		left: -0.25em;
 	}
-}
-#where:before{
-	content: url(../img/icons/where.png);
-	margin-right: 0.5em;
-}
-#guides:before{
-	content: url(../img/icons/guides.png);
-	margin-right: 0.5em;
-}
-#partners:before{
-	content: url(../img/icons/partners.png);
-	margin-right: 0.5em;
-}
-#news:before{
-	content: url(../img/icons/news.png);
-	margin-right: 0.5em;
+	.facebook{
+		background-position: -39px -24px;
+	}
+	.twitter{
+		background-position: -135px -24px;
+	}
+	.smartphone{
+		background-position: -74px -24px;
+	}
+	.tablet{
+		background-position: -103px -24px;
+	}
+	.android{
+		background-position: 0 -20px;
+	}
 }
 
 
@@ -188,19 +192,18 @@ header{
   position: relative;
 }
 #mySwipe{
-	max-width: 1200px;
 	margin: 0 auto;
 	position: relative;
 }
 .slider{
-	background-color: $clearBlue;
-	height: 500px;
+	-height: 500px;
 	position: relative;
-	max-width: 2000px;
+	-max-width: 2000px;
 	.controllers{
 		margin: auto;
 		position: absolute;
 		top: 0; left: 0; bottom: 0; right: 0;
+		z-index: 10;
 		#left{ 
 			float:left;
 			@include arrowSlider();
@@ -223,6 +226,7 @@ header{
 	//padding: 1.5em 0 0 1.5em;
 	background-color: $whiteOpacity;
 	height: 26.3em;
+	z-index: 5;
 	.block, .submit{
 		display: block;
 		margin-top: 1em;
@@ -247,6 +251,9 @@ header{
 	margin: 0em 2.2em 1.5em 2.2em;
 	.rubrique{
 		margin-top: 2.5em;
+		h2{
+			padding-left: 0.25em;
+		}
 		figure{
 			float: left;
 			border: 1px solid $whiteGray;
@@ -282,6 +289,7 @@ header{
 					background-color: $clearBlue;
 					padding: 0.5em 0.75em;
 					border: none;
+					font-size: 12px;
 					@include border-radius(0.5em);
 					&:hover{
 						background-color: $darkBlue;
@@ -303,6 +311,7 @@ header{
 			//font-size: 20px;
 			color: $darkGray;
 			margin-bottom: 0.5em;
+			padding-left: 0.25em;
 		}
 		.socials{
 			//margin: 0.5em 1.5em 0 0;
