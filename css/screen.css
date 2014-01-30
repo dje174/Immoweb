@@ -104,8 +104,8 @@ header nav li a {
 header nav li a:hover {
   color: #3c6caa; }
 
-/* LOGO MENU + Logos */
-/* line 83, ../scss/screen.scss */
+/* LOGO MENU + ICONES */
+/* line 81, ../scss/screen.scss */
 .onglets span, .logoHome, .logoAll, .partners, .where, .news, .guides {
   width: 16px;
   height: 16px;
@@ -113,7 +113,7 @@ header nav li a:hover {
   position: relative;
   background: url("../img/icons/sprite.png") no-repeat; }
 
-/* line 90, ../scss/screen.scss */
+/* line 88, ../scss/screen.scss */
 .socialsIcons {
   width: 32px;
   height: 32px;
@@ -121,24 +121,25 @@ header nav li a:hover {
   position: relative;
   background: url("../img/icons/sprite.png") no-repeat; }
 
-/* line 99, ../scss/screen.scss */
+/* line 97, ../scss/screen.scss */
 nav .icon-1 {
   background-position: -130px 0px;
   left: 2.5em;
   top: -1.25em; }
-/* line 104, ../scss/screen.scss */
+/* line 102, ../scss/screen.scss */
 nav .icon-2 {
   background-position: -130px 0;
   left: 2.15em;
   top: -1.25em; }
-/* line 109, ../scss/screen.scss */
+/* line 107, ../scss/screen.scss */
 nav .icon-3 {
   left: 3em;
   top: -1.25em; }
-/* line 113, ../scss/screen.scss */
+/* line 111, ../scss/screen.scss */
 nav .icon-4 {
   left: 3.5em;
-  top: -1.25em; }
+  top: -1.25em;
+  background-position: -258px 0; }
 /* line 117, ../scss/screen.scss */
 nav .icon-5 {
   left: 1.75em;
@@ -151,7 +152,7 @@ nav .icon-6 {
   background-position: -195px 0; }
 /* line 127, ../scss/screen.scss */
 nav .icon-7 {
-  left: 2.75em;
+  left: 2.5em;
   top: -1.25em;
   background-position: -320px 0; }
 
@@ -296,83 +297,88 @@ nav .icon-7 {
 /* line 254, ../scss/screen.scss */
 .main .rubrique h2, .main .about h2 {
   padding-left: 0.25em; }
-/* line 257, ../scss/screen.scss */
+/* line 256, ../scss/screen.scss */
+.main .rubrique h2 .voirPlus, .main .about h2 .voirPlus {
+  font-size: 15px; }
+/* line 260, ../scss/screen.scss */
 .main .rubrique figure, .main .about figure {
   float: left;
   border: 1px solid #d7d7d7;
   margin-top: 1.5em; }
-/* line 262, ../scss/screen.scss */
+/* line 264, ../scss/screen.scss */
 .main .rubrique figure img, .main .about figure img {
   float: left;
-  margin: 1.25em 1em 1.25em 1em;
   border: 1px solid #30393e; }
-/* line 267, ../scss/screen.scss */
+/* line 268, ../scss/screen.scss */
 .main .rubrique figure .details, .main .about figure .details {
   float: left;
   margin-top: 0.5em; }
-/* line 272, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 .main .rubrique figure .details .price, .main .about figure .details .price {
   color: #d13f3e;
   font-weight: bold; }
-/* line 276, ../scss/screen.scss */
+/* line 277, ../scss/screen.scss */
 .main .rubrique figure .details .ville, .main .about figure .details .ville {
   color: #b4c135; }
-/* line 279, ../scss/screen.scss */
+/* line 280, ../scss/screen.scss */
 .main .rubrique figure .details .superficie, .main .about figure .details .superficie {
   color: #30393e; }
-/* line 282, ../scss/screen.scss */
+/* line 283, ../scss/screen.scss */
 .main .rubrique figure .details .descriptif, .main .about figure .details .descriptif {
   color: #30393e;
   line-height: 1.25;
   padding-bottom: 0.25em; }
-/* line 287, ../scss/screen.scss */
+/* line 288, ../scss/screen.scss */
 .main .rubrique figure .details .buttonMore, .main .about figure .details .buttonMore {
   color: white;
   background-color: #3c6caa;
   padding: 0.5em 0.75em;
   border: none;
-  font-size: 12px;
+  float: left;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em; }
-/* line 294, ../scss/screen.scss */
+/* line 295, ../scss/screen.scss */
 .main .rubrique figure .details .buttonMore:hover, .main .about figure .details .buttonMore:hover {
   background-color: #224169;
   cursor: pointer; }
 
-/* line 305, ../scss/screen.scss */
+/* line 306, ../scss/screen.scss */
 .about div {
   float: left;
   padding-right: 1.5em; }
-/* line 310, ../scss/screen.scss */
+/* line 309, ../scss/screen.scss */
 .about div h3 {
   color: #30393e;
   margin-bottom: 0.5em;
   padding-left: 0.25em; }
+/* line 315, ../scss/screen.scss */
+.about .vert {
+  color: #b4c135; }
 
-/* line 325, ../scss/screen.scss */
+/* line 320, ../scss/screen.scss */
 footer {
   width: 100%;
   background-color: #30393e;
   padding-bottom: 2em; }
-/* line 329, ../scss/screen.scss */
+/* line 324, ../scss/screen.scss */
 footer .sectionFooter {
   float: left; }
-/* line 333, ../scss/screen.scss */
+/* line 328, ../scss/screen.scss */
 footer .sectionFooter h3 {
   color: #d13f3e;
   font-size: 19px; }
-/* line 337, ../scss/screen.scss */
+/* line 332, ../scss/screen.scss */
 footer .sectionFooter a {
   color: white;
   font-size: 16px;
   display: block; }
-/* line 341, ../scss/screen.scss */
+/* line 336, ../scss/screen.scss */
 footer .sectionFooter a:hover {
   color: #8f8f8f; }
-/* line 346, ../scss/screen.scss */
+/* line 341, ../scss/screen.scss */
 footer .sectionFooter #connect .inputText {
   padding: 0.5em 0.75em;
   -webkit-border-radius: 0.5em;
@@ -383,10 +389,10 @@ footer .sectionFooter #connect .inputText {
   border: 1px solid #8f8f8f;
   display: block;
   margin-bottom: 0.75em; }
-/* line 352, ../scss/screen.scss */
+/* line 347, ../scss/screen.scss */
 footer .sectionFooter #connect label {
   color: #8f8f8f; }
-/* line 355, ../scss/screen.scss */
+/* line 350, ../scss/screen.scss */
 footer .sectionFooter #connect .submitSmall {
   color: white;
   background-color: #3c6caa;
@@ -400,12 +406,12 @@ footer .sectionFooter #connect .submitSmall {
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em; }
-/* line 364, ../scss/screen.scss */
+/* line 359, ../scss/screen.scss */
 footer .sectionFooter #connect .submitSmall:hover {
   background-color: #224169;
   cursor: pointer; }
 
-/* line 373, ../scss/screen.scss */
+/* line 368, ../scss/screen.scss */
 header:after, .rubrique:after, .about:after, .rubrique article:after, .about article:after, .sectionFooter:after, footer:after {
   content: '';
   clear: both;
@@ -431,7 +437,7 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
   /* line 12, ../scss/_mediaQueries.scss */
   nav li {
     width: 33%;
-    padding: 1em 0em; }
+    padding: 1.5em 0em; }
 
   /* line 17, ../scss/_mediaQueries.scss */
   #connect .inputText {
@@ -479,212 +485,233 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
 
   /* line 60, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
-    width: 7em;
+    width: 8em;
     font-size: 15px;
     padding: 0.5em 0; }
+  /* line 65, ../scss/_mediaQueries.scss */
+  .rubrique figure img, .about figure img {
+    margin: 1.25em 2em 1.25em 2em; }
 
-  /* line 67, ../scss/_mediaQueries.scss */
-  .about div {
-    margin: 1.5em 0.5em; }
   /* line 70, ../scss/_mediaQueries.scss */
+  .about div {
+    margin: 1.5em 0.5em;
+    font-size: 14px; }
+  /* line 74, ../scss/_mediaQueries.scss */
   .about h3 {
     font-size: 16px; }
-  /* line 73, ../scss/_mediaQueries.scss */
+  /* line 77, ../scss/_mediaQueries.scss */
   .about .socials {
     margin: 0.5em 1em 0 0em; }
-  /* line 76, ../scss/_mediaQueries.scss */
+  /* line 80, ../scss/_mediaQueries.scss */
   .about .partnersImg {
     margin: 1em 0.5em 0 0; }
 
-  /* line 80, ../scss/_mediaQueries.scss */
+  /* line 84, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 85%;
     padding: 1em 0 0 2em; }
 
-  /* line 84, ../scss/_mediaQueries.scss */
+  /* line 88, ../scss/_mediaQueries.scss */
   .controllers {
     visibility: hidden; }
 
-  /* line 87, ../scss/_mediaQueries.scss */
+  /* line 91, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 100%; }
-  /* line 89, ../scss/_mediaQueries.scss */
+  /* line 93, ../scss/_mediaQueries.scss */
   .fastSearch form {
     width: 16em;
     margin: 0 auto;
     padding-left: 1.5em; }
-  /* line 95, ../scss/_mediaQueries.scss */
+  /* line 99, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 5em;
     margin: 0 0.5em; }
-  /* line 100, ../scss/_mediaQueries.scss */
+  /* line 104, ../scss/_mediaQueries.scss */
   .fastSearch #location {
-    width: 15em; } }
+    width: 15em; }
+
+  /* line 108, ../scss/_mediaQueries.scss */
+  .buttonMore {
+    font-size: 10px; } }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 107, ../scss/_mediaQueries.scss */
+  /* line 114, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-430.png);
     width: 100%;
     height: 500px; }
 
-  /* line 112, ../scss/_mediaQueries.scss */
+  /* line 119, ../scss/_mediaQueries.scss */
   #img2:after {
     content: url(../img/imgSlide2-430.png);
     width: 100%;
     height: 500px; }
 
-  /* line 117, ../scss/_mediaQueries.scss */
+  /* line 124, ../scss/_mediaQueries.scss */
   #img3:after {
     content: url(../img/imgSlide3-430.png);
     width: 100%;
     height: 500px; }
 
-  /* line 122, ../scss/_mediaQueries.scss */
+  /* line 129, ../scss/_mediaQueries.scss */
   #img1 {
     content: url(../img/imgSlide1-430.png);
     width: 100%;
     height: 500px; }
 
-  /* line 127, ../scss/_mediaQueries.scss */
+  /* line 134, ../scss/_mediaQueries.scss */
   #img2 {
     content: url(../img/imgSlide2-430.png);
     width: 100%;
     height: 500px; }
 
-  /* line 132, ../scss/_mediaQueries.scss */
+  /* line 139, ../scss/_mediaQueries.scss */
   #img3 {
     content: url(../img/imgSlide3-430.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 500px) {
-  /* line 140, ../scss/_mediaQueries.scss */
+  /* line 147, ../scss/_mediaQueries.scss */
   h2 {
     font-size: 22px; } }
 @media only screen and (min-width: 500px) and (max-width: 600px) {
-  /* line 146, ../scss/_mediaQueries.scss */
+  /* line 154, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 100%; }
-  /* line 148, ../scss/_mediaQueries.scss */
+  /* line 156, ../scss/_mediaQueries.scss */
   .fastSearch form {
     width: 20em;
     margin: 0 auto;
     padding-left: 1.5em; }
-  /* line 154, ../scss/_mediaQueries.scss */
+  /* line 162, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 159, ../scss/_mediaQueries.scss */
+  /* line 167, ../scss/_mediaQueries.scss */
   .fastSearch #location {
     width: 18.5em; }
 
-  /* line 163, ../scss/_mediaQueries.scss */
+  /* line 171, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
-    height: 9em;
-    margin-right: 0.5em; }
-  /* line 166, ../scss/_mediaQueries.scss */
-  .rubrique figure .details, .about figure .details {
-    width: 8em;
-    font-size: 15px;
-    padding: 0.5em 0; } }
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+    height: 8em;
+    margin-right: 0.5em;
+    padding-right: 0.5em; }
   /* line 175, ../scss/_mediaQueries.scss */
+  .rubrique figure .details, .about figure .details {
+    width: 10em;
+    font-size: 17px;
+    padding: 0.5em 0; }
+  /* line 180, ../scss/_mediaQueries.scss */
+  .rubrique figure img, .about figure img {
+    margin: 1.25em 2em 1.25em 2em; } }
+@media only screen and (min-width: 600px) {
+  /* line 187, ../scss/_mediaQueries.scss */
+  .rubrique figure img, .about figure img {
+    margin: 1.25em 1em 1.25em 1em; } }
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  /* line 195, ../scss/_mediaQueries.scss */
   .about div {
     margin: 1.5em 0.5em; }
-  /* line 178, ../scss/_mediaQueries.scss */
+  /* line 198, ../scss/_mediaQueries.scss */
   .about h3 {
     font-size: 18px; }
-  /* line 181, ../scss/_mediaQueries.scss */
+  /* line 201, ../scss/_mediaQueries.scss */
   .about .socials {
     margin: 0.5em 1em 0 0em; }
-  /* line 184, ../scss/_mediaQueries.scss */
+  /* line 204, ../scss/_mediaQueries.scss */
   .about .partnersImg {
     margin: 1em 0.5em 0 0; }
 
-  /* line 188, ../scss/_mediaQueries.scss */
+  /* line 208, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 45%;
     padding: 1em 0 0 1em;
     height: 15em; }
 
-  /* line 193, ../scss/_mediaQueries.scss */
+  /* line 213, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-800.png);
     width: 100%;
     height: 500px; }
 
-  /* line 198, ../scss/_mediaQueries.scss */
+  /* line 218, ../scss/_mediaQueries.scss */
   #img2:after {
     content: url(../img/imgSlide2-800.png);
     width: 100%;
     height: 500px; }
 
-  /* line 203, ../scss/_mediaQueries.scss */
+  /* line 223, ../scss/_mediaQueries.scss */
   #img3:after {
     content: url(../img/imgSlide3-800.png);
     width: 100%;
     height: 500px; }
 
-  /* line 209, ../scss/_mediaQueries.scss */
+  /* line 229, ../scss/_mediaQueries.scss */
   #img1 {
     content: url(../img/imgSlide1-800.png);
     width: 100%;
     height: 500px; }
 
-  /* line 214, ../scss/_mediaQueries.scss */
+  /* line 234, ../scss/_mediaQueries.scss */
   #img2 {
     content: url(../img/imgSlide2-800.png);
     width: 100%;
     height: 500px; }
 
-  /* line 219, ../scss/_mediaQueries.scss */
+  /* line 239, ../scss/_mediaQueries.scss */
   #img3 {
     content: url(../img/imgSlide3-800.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-  /* line 226, ../scss/_mediaQueries.scss */
+  /* line 246, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 100%; }
-  /* line 228, ../scss/_mediaQueries.scss */
+  /* line 248, ../scss/_mediaQueries.scss */
   .fastSearch form {
     padding-left: 4.5em; }
-  /* line 233, ../scss/_mediaQueries.scss */
+  /* line 253, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 238, ../scss/_mediaQueries.scss */
+  /* line 258, ../scss/_mediaQueries.scss */
   .fastSearch #location {
     width: 18.5em; } }
 @media only screen and (min-width: 600px) and (max-width: 650px) {
-  /* line 245, ../scss/_mediaQueries.scss */
+  /* line 265, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     height: 9em;
     margin-right: 0.5em; }
-  /* line 248, ../scss/_mediaQueries.scss */
+  /* line 268, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8.5em;
     font-size: 15px;
     padding: 0.5em 0.5em 0.5em 0; } }
 @media only screen and (min-width: 650px) and (max-width: 700px) {
-  /* line 257, ../scss/_mediaQueries.scss */
+  /* line 277, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     height: 9em;
     margin-right: 1.75em; }
-  /* line 260, ../scss/_mediaQueries.scss */
+  /* line 280, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8.5em;
     font-size: 15px;
     padding: 0.5em 0.5em 0.5em 0; } }
 @media only screen and (min-width: 700px) and (max-width: 800px) {
-  /* line 269, ../scss/_mediaQueries.scss */
+  /* line 289, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 2em 0 0; }
-  /* line 271, ../scss/_mediaQueries.scss */
+  /* line 291, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; } }
+@media only screen and (min-width: 800px) {
+  /* line 300, ../scss/_mediaQueries.scss */
+  .buttonMore {
+    font-size: 14px;
+    margin-bottom: 0.5em; } }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
-  /* line 279, ../scss/_mediaQueries.scss */
+  /* line 307, ../scss/_mediaQueries.scss */
   .logo img {
     margin: 1.5em auto 1em auto;
     position: absolute;
@@ -693,399 +720,399 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
     bottom: 0;
     right: 0; }
 
-  /* line 284, ../scss/_mediaQueries.scss */
+  /* line 312, ../scss/_mediaQueries.scss */
   .slogan {
     visibility: hidden; }
 
-  /* line 287, ../scss/_mediaQueries.scss */
+  /* line 315, ../scss/_mediaQueries.scss */
   nav {
     margin-top: 5em; }
-  /* line 289, ../scss/_mediaQueries.scss */
+  /* line 317, ../scss/_mediaQueries.scss */
   nav li {
     width: 14%;
     padding: 1em 0em; }
 
-  /* line 294, ../scss/_mediaQueries.scss */
+  /* line 322, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 20em; }
-  /* line 296, ../scss/_mediaQueries.scss */
+  /* line 324, ../scss/_mediaQueries.scss */
   .fastSearch form {
     padding-left: 3.5em; }
-  /* line 301, ../scss/_mediaQueries.scss */
+  /* line 329, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 306, ../scss/_mediaQueries.scss */
+  /* line 334, ../scss/_mediaQueries.scss */
   .fastSearch #location {
     width: 18.5em; }
 
-  /* line 311, ../scss/_mediaQueries.scss */
+  /* line 339, ../scss/_mediaQueries.scss */
   .about div {
     margin: 1.5em 0.5em; }
-  /* line 314, ../scss/_mediaQueries.scss */
+  /* line 342, ../scss/_mediaQueries.scss */
   .about h3 {
     font-size: 18px; }
-  /* line 317, ../scss/_mediaQueries.scss */
+  /* line 345, ../scss/_mediaQueries.scss */
   .about .socials {
     margin: 0.5em 1em 0 0em; }
-  /* line 320, ../scss/_mediaQueries.scss */
+  /* line 348, ../scss/_mediaQueries.scss */
   .about .partnersImg {
     margin: 1em 0.5em 0 0; }
 
-  /* line 324, ../scss/_mediaQueries.scss */
+  /* line 352, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 22.5%;
     padding: 1em 0 0 1em;
     height: 15em; } }
 @media only screen and (min-width: 800px) and (max-width: 1100px) {
-  /* line 333, ../scss/_mediaQueries.scss */
+  /* line 361, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-1000.png);
     width: 100%;
     height: 500px; }
 
-  /* line 338, ../scss/_mediaQueries.scss */
+  /* line 366, ../scss/_mediaQueries.scss */
   #img2:after {
     content: url(../img/imgSlide2-1000.png);
     width: 100%;
     height: 500px; }
 
-  /* line 343, ../scss/_mediaQueries.scss */
+  /* line 371, ../scss/_mediaQueries.scss */
   #img3:after {
     content: url(../img/imgSlide3-1000.png);
     width: 100%;
     height: 500px; }
 
-  /* line 348, ../scss/_mediaQueries.scss */
+  /* line 376, ../scss/_mediaQueries.scss */
   #img1 {
     content: url(../img/imgSlide1-1000.png);
     width: 100%;
     height: 500px; }
 
-  /* line 353, ../scss/_mediaQueries.scss */
+  /* line 381, ../scss/_mediaQueries.scss */
   #img2 {
     content: url(../img/imgSlide2-1000.png);
     width: 100%;
     height: 500px; }
 
-  /* line 358, ../scss/_mediaQueries.scss */
+  /* line 386, ../scss/_mediaQueries.scss */
   #img3 {
     content: url(../img/imgSlide3-1000.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-  /* line 366, ../scss/_mediaQueries.scss */
+  /* line 394, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-1200.png);
     width: 100%;
     height: 500px; }
 
-  /* line 371, ../scss/_mediaQueries.scss */
+  /* line 399, ../scss/_mediaQueries.scss */
   #img2:after {
     content: url(../img/imgSlide2-1200.png);
     width: 100%;
     height: 500px; }
 
-  /* line 376, ../scss/_mediaQueries.scss */
+  /* line 404, ../scss/_mediaQueries.scss */
   #img3:after {
     content: url(../img/imgSlide3-1200.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 800px) and (max-width: 900px) {
-  /* line 384, ../scss/_mediaQueries.scss */
+  /* line 412, ../scss/_mediaQueries.scss */
   .rubrique, .about {
     margin-left: 4em; }
 
-  /* line 387, ../scss/_mediaQueries.scss */
+  /* line 415, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 2em 0 0; }
-  /* line 389, ../scss/_mediaQueries.scss */
+  /* line 417, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; } }
 @media only screen and (min-width: 900px) and (max-width: 1000px) {
-  /* line 397, ../scss/_mediaQueries.scss */
+  /* line 425, ../scss/_mediaQueries.scss */
   .rubrique, .about {
     margin-left: 10em; }
 
-  /* line 400, ../scss/_mediaQueries.scss */
+  /* line 428, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 2em 0 0; }
-  /* line 402, ../scss/_mediaQueries.scss */
+  /* line 430, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; } }
 @media only screen and (min-width: 1000px) and (max-width: 1280px) {
-  /* line 410, ../scss/_mediaQueries.scss */
+  /* line 438, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
     left: 2em;
     float: left; }
 
-  /* line 415, ../scss/_mediaQueries.scss */
+  /* line 443, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 20em;
     padding: 1.5em 0 0 1.5em; }
-  /* line 419, ../scss/_mediaQueries.scss */
+  /* line 447, ../scss/_mediaQueries.scss */
   .fastSearch form {
     padding-left: 2.75em; }
-  /* line 424, ../scss/_mediaQueries.scss */
+  /* line 452, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 429, ../scss/_mediaQueries.scss */
+  /* line 457, ../scss/_mediaQueries.scss */
   .fastSearch #location {
     width: 18.5em; }
 
-  /* line 433, ../scss/_mediaQueries.scss */
+  /* line 461, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 18%;
     padding: 1em 1.5em; }
 
-  /* line 438, ../scss/_mediaQueries.scss */
+  /* line 466, ../scss/_mediaQueries.scss */
   .about div {
     margin: 1.5em 1.5em;
     width: 40%; }
-  /* line 441, ../scss/_mediaQueries.scss */
+  /* line 469, ../scss/_mediaQueries.scss */
   .about div h3 {
     font-size: 20px; }
-  /* line 444, ../scss/_mediaQueries.scss */
+  /* line 472, ../scss/_mediaQueries.scss */
   .about div .socials {
     margin: 0.5em 0.5em 0 0; }
-  /* line 447, ../scss/_mediaQueries.scss */
+  /* line 475, ../scss/_mediaQueries.scss */
   .about div .partnersImg {
     margin: 0.5em 1.75em 0 0; } }
 @media only screen and (min-width: 1000px) and (max-width: 1100px) {
-  /* line 455, ../scss/_mediaQueries.scss */
+  /* line 483, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 2em 0 0; }
-  /* line 457, ../scss/_mediaQueries.scss */
+  /* line 485, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; }
 
-  /* line 462, ../scss/_mediaQueries.scss */
+  /* line 490, ../scss/_mediaQueries.scss */
   nav {
     float: left;
     padding-left: 5em;
     margin-top: 1.25em;
     height: 2em; } }
 @media only screen and (min-width: 1100px) and (max-width: 1280px) {
-  /* line 472, ../scss/_mediaQueries.scss */
+  /* line 500, ../scss/_mediaQueries.scss */
   #img1 {
     content: url(../img/imgSlide1-1200.png);
     width: 100%;
     height: 500px; }
 
-  /* line 477, ../scss/_mediaQueries.scss */
+  /* line 505, ../scss/_mediaQueries.scss */
   #img2 {
     content: url(../img/imgSlide2-1200.png);
     width: 100%;
     height: 500px; }
 
-  /* line 482, ../scss/_mediaQueries.scss */
+  /* line 510, ../scss/_mediaQueries.scss */
   #img3 {
     content: url(../img/imgSlide3-1200.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 1100px) and (max-width: 1280px) {
-  /* line 491, ../scss/_mediaQueries.scss */
+  /* line 519, ../scss/_mediaQueries.scss */
   .rubrique, .about {
     margin-left: 2em; }
 
-  /* line 494, ../scss/_mediaQueries.scss */
+  /* line 522, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 1em 0 0; }
-  /* line 496, ../scss/_mediaQueries.scss */
+  /* line 524, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; }
 
-  /* line 501, ../scss/_mediaQueries.scss */
+  /* line 529, ../scss/_mediaQueries.scss */
   nav {
     float: left;
     padding-left: 5em;
     margin-top: 1.25em;
     height: 2em; }
-  /* line 506, ../scss/_mediaQueries.scss */
+  /* line 534, ../scss/_mediaQueries.scss */
   nav li {
     padding-right: 2em; } }
 @media only screen and (min-width: 1280px) and (max-width: 1500px) {
-  /* line 513, ../scss/_mediaQueries.scss */
+  /* line 541, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
     left: 2em;
     float: left; }
 
-  /* line 518, ../scss/_mediaQueries.scss */
+  /* line 546, ../scss/_mediaQueries.scss */
   nav {
     float: left;
     padding-left: 5em;
     margin-top: 1.25em;
     height: 2em; }
-  /* line 523, ../scss/_mediaQueries.scss */
+  /* line 551, ../scss/_mediaQueries.scss */
   nav li {
     padding-right: 3em; }
 
-  /* line 527, ../scss/_mediaQueries.scss */
+  /* line 555, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 20em;
     padding: 1.5em 0 0 1.5em; }
-  /* line 531, ../scss/_mediaQueries.scss */
+  /* line 559, ../scss/_mediaQueries.scss */
   .fastSearch form {
     padding-left: 2.75em; }
-  /* line 535, ../scss/_mediaQueries.scss */
+  /* line 563, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 540, ../scss/_mediaQueries.scss */
+  /* line 568, ../scss/_mediaQueries.scss */
   .fastSearch #location {
     width: 18.5em; }
 
-  /* line 544, ../scss/_mediaQueries.scss */
+  /* line 572, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 18%;
     padding: 1em 1.5em; }
 
-  /* line 549, ../scss/_mediaQueries.scss */
+  /* line 577, ../scss/_mediaQueries.scss */
   .about div {
     margin: 1.5em 1.5em;
     width: 42.5%;
     height: 8em; }
-  /* line 553, ../scss/_mediaQueries.scss */
+  /* line 581, ../scss/_mediaQueries.scss */
   .about div h3 {
     font-size: 20px; }
-  /* line 556, ../scss/_mediaQueries.scss */
+  /* line 584, ../scss/_mediaQueries.scss */
   .about div .socials {
     margin: 0.5em 1.5em 0 0; }
-  /* line 559, ../scss/_mediaQueries.scss */
+  /* line 587, ../scss/_mediaQueries.scss */
   .about div .partnersImg {
     margin: 0.5em 1.5em 0 0; }
 
-  /* line 564, ../scss/_mediaQueries.scss */
+  /* line 592, ../scss/_mediaQueries.scss */
   .rubrique, .about {
     margin-left: 2em; }
 
-  /* line 567, ../scss/_mediaQueries.scss */
+  /* line 595, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 1em 0 0; }
-  /* line 569, ../scss/_mediaQueries.scss */
+  /* line 597, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; }
 
-  /* line 574, ../scss/_mediaQueries.scss */
+  /* line 602, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 579, ../scss/_mediaQueries.scss */
+  /* line 607, ../scss/_mediaQueries.scss */
   #img2:after {
     content: url(../img/imgSlide2-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 584, ../scss/_mediaQueries.scss */
+  /* line 612, ../scss/_mediaQueries.scss */
   #img3:after {
     content: url(../img/imgSlide3-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 589, ../scss/_mediaQueries.scss */
+  /* line 617, ../scss/_mediaQueries.scss */
   #img1 {
     content: url(../img/imgSlide1-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 594, ../scss/_mediaQueries.scss */
+  /* line 622, ../scss/_mediaQueries.scss */
   #img2 {
     content: url(../img/imgSlide2-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 599, ../scss/_mediaQueries.scss */
+  /* line 627, ../scss/_mediaQueries.scss */
   #img3 {
     content: url(../img/imgSlide3-1500.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-  /* line 607, ../scss/_mediaQueries.scss */
+  /* line 635, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 612, ../scss/_mediaQueries.scss */
+  /* line 640, ../scss/_mediaQueries.scss */
   #img2:after {
     content: url(../img/imgSlide2-1500.png);
     width: 100%;
     height: 500px; }
 
-  /* line 617, ../scss/_mediaQueries.scss */
+  /* line 645, ../scss/_mediaQueries.scss */
   #img3:after {
     content: url(../img/imgSlide3-1500.png);
     width: 100%;
     height: 500px; } }
 @media only screen and (min-width: 1500px) {
-  /* line 625, ../scss/_mediaQueries.scss */
+  /* line 653, ../scss/_mediaQueries.scss */
   h2 {
     font-size: 24px; }
 
-  /* line 628, ../scss/_mediaQueries.scss */
+  /* line 656, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
     left: 2em;
     float: left; }
 
-  /* line 633, ../scss/_mediaQueries.scss */
+  /* line 661, ../scss/_mediaQueries.scss */
   nav {
     float: left;
     padding-left: 7em;
     margin-top: 1.25em;
     height: 2em; }
-  /* line 638, ../scss/_mediaQueries.scss */
+  /* line 666, ../scss/_mediaQueries.scss */
   nav li {
     padding-right: 5.5em; }
 
-  /* line 642, ../scss/_mediaQueries.scss */
+  /* line 670, ../scss/_mediaQueries.scss */
   .main {
     width: 1200px;
     margin: 0 auto; }
 
-  /* line 646, ../scss/_mediaQueries.scss */
+  /* line 674, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 1.5em 0 0; }
-  /* line 648, ../scss/_mediaQueries.scss */
+  /* line 676, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; }
 
-  /* line 653, ../scss/_mediaQueries.scss */
+  /* line 681, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 20%;
     padding: 1em 1.5em; }
 
-  /* line 658, ../scss/_mediaQueries.scss */
+  /* line 686, ../scss/_mediaQueries.scss */
   .about div {
     margin: 1.5em 1.5em;
     width: 42.5%;
     height: 8em; }
-  /* line 662, ../scss/_mediaQueries.scss */
+  /* line 690, ../scss/_mediaQueries.scss */
   .about div h3 {
     font-size: 22px; }
 
-  /* line 667, ../scss/_mediaQueries.scss */
+  /* line 695, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 20em;
     padding: 1.5em 0 0 1.5em; }
-  /* line 671, ../scss/_mediaQueries.scss */
+  /* line 699, ../scss/_mediaQueries.scss */
   .fastSearch form {
     padding-left: 2.75em; }
-  /* line 675, ../scss/_mediaQueries.scss */
+  /* line 703, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 680, ../scss/_mediaQueries.scss */
+  /* line 708, ../scss/_mediaQueries.scss */
   .fastSearch #localisation {
     width: 18.5em; } }
