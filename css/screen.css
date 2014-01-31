@@ -1036,7 +1036,7 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
     content: url(../img/imgSlide3-1500.png);
     width: 100%;
     height: 500px; } }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) {
   /* line 635, ../scss/_mediaQueries.scss */
   #img1:after {
     content: url(../img/imgSlide1-1500.png);
