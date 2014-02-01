@@ -1053,66 +1053,71 @@ header:after, .rubrique:after, .about:after, .rubrique article:after, .about art
   #img3:after {
     content: url(../img/imgSlide3-1500.png);
     width: 100%;
-    height: 500px; } }
+    height: 500px; }
+
+  /* line 650, ../scss/_mediaQueries.scss */
+  .slider {
+    width: 1200px;
+    margin: 0 auto; } }
 @media only screen and (min-width: 1500px) {
-  /* line 653, ../scss/_mediaQueries.scss */
+  /* line 657, ../scss/_mediaQueries.scss */
   h2 {
     font-size: 24px; }
 
-  /* line 656, ../scss/_mediaQueries.scss */
+  /* line 660, ../scss/_mediaQueries.scss */
   .logo {
     position: relative;
     left: 2em;
     float: left; }
 
-  /* line 661, ../scss/_mediaQueries.scss */
+  /* line 665, ../scss/_mediaQueries.scss */
   nav {
     float: left;
     padding-left: 7em;
     margin-top: 1.25em;
     height: 2em; }
-  /* line 666, ../scss/_mediaQueries.scss */
+  /* line 670, ../scss/_mediaQueries.scss */
   nav li {
     padding-right: 5.5em; }
 
-  /* line 670, ../scss/_mediaQueries.scss */
+  /* line 674, ../scss/_mediaQueries.scss */
   .main {
     width: 1200px;
     margin: 0 auto; }
 
-  /* line 674, ../scss/_mediaQueries.scss */
+  /* line 678, ../scss/_mediaQueries.scss */
   .rubrique figure, .about figure {
     margin: 1em 1.5em 0 0; }
-  /* line 676, ../scss/_mediaQueries.scss */
+  /* line 680, ../scss/_mediaQueries.scss */
   .rubrique figure .details, .about figure .details {
     width: 8em;
     padding-right: 0.5em; }
 
-  /* line 681, ../scss/_mediaQueries.scss */
+  /* line 685, ../scss/_mediaQueries.scss */
   .sectionFooter {
     width: 20%;
     padding: 1em 1.5em; }
 
-  /* line 686, ../scss/_mediaQueries.scss */
+  /* line 690, ../scss/_mediaQueries.scss */
   .about div {
     margin: 1.5em 1.5em;
     width: 42.5%;
     height: 8em; }
-  /* line 690, ../scss/_mediaQueries.scss */
+  /* line 694, ../scss/_mediaQueries.scss */
   .about div h3 {
     font-size: 22px; }
 
-  /* line 695, ../scss/_mediaQueries.scss */
+  /* line 699, ../scss/_mediaQueries.scss */
   .fastSearch {
     width: 20em;
     padding: 1.5em 0 0 1.5em; }
-  /* line 699, ../scss/_mediaQueries.scss */
+  /* line 703, ../scss/_mediaQueries.scss */
   .fastSearch form {
     padding-left: 2.75em; }
-  /* line 703, ../scss/_mediaQueries.scss */
+  /* line 707, ../scss/_mediaQueries.scss */
   .fastSearch .prix input {
     width: 7em;
     margin: 0 0.5em 0 0.5em; }
-  /* line 708, ../scss/_mediaQueries.scss */
+  /* line 712, ../scss/_mediaQueries.scss */
   .fastSearch #localisation {
     width: 18.5em; } }
